@@ -1,9 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2023-08-18T14:12:04.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" version="21.6.1" etag="7bDBzdgFTYgABNbF5xay" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-18T14:59:10.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="ANmS3Jmo04d204N3PoQV" version="21.6.1" type="github">
   <diagram name="Страница 1" id="bLAVj35ljaopodrXIwA8">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-15" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#b85450;fillColor=default;glass=0;shadow=0;gradientColor=none;align=left;" vertex="1" parent="1">
+          <mxGeometry x="125" y="40" width="310" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n6yEiMQoAXYmEsAAvraC-2" target="n6yEiMQoAXYmEsAAvraC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-2" value="VM1:&lt;br&gt;Nginx, Zabbix agent, filebeat" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="160" y="180" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="n6yEiMQoAXYmEsAAvraC-3" target="n6yEiMQoAXYmEsAAvraC-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-3" value="VM2:&lt;br&gt;Nginx, Zabbix agent, filebeat" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="n6yEiMQoAXYmEsAAvraC-4" target="n6yEiMQoAXYmEsAAvraC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="n6yEiMQoAXYmEsAAvraC-4" target="n6yEiMQoAXYmEsAAvraC-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="320" />
+              <mxPoint x="350" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-4" value="App Load Balancer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="n6yEiMQoAXYmEsAAvraC-5" target="n6yEiMQoAXYmEsAAvraC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-5" value="Внешняя сеть" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="530" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-9" value="VM3:&lt;br&gt;Zabbix" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="380" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-10" value="VM4:&lt;br&gt;Elastic" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-11" value="VM5:&lt;br&gt;Kibana" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n6yEiMQoAXYmEsAAvraC-12" value="VM6:&lt;br&gt;SSH jump" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="680" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
