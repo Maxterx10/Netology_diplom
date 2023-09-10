@@ -1,0 +1,34 @@
+---
+- name: install nginx
+  hosts: web-servers
+  become: yes
+  
+  roles:
+    - role: geerlingguy.nginx
+
+- name: setting up nginx
+  hosts: web-servers
+  become: yes
+
+  tasks:
+  - name: copy index
+    template:
+      src: ./nginx/index.html.j2
+      dest: /var/www/index.html
+    notify:
+    - restart nginx
+
+  - name: copy web.conf
+    ansible.builtin.copy:
+      src: ./nginx/web.conf
+      dest: /etc/nginx/conf.d/
+    notify: restart nginx
+
+  - name: start nginx
+    service: name=nginx state=started
+
+  handlers:
+  - name: restart nginx
+    service:
+      name: nginx
+      state: restarted

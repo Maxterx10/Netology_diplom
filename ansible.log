@@ -1,0 +1,1073 @@
+2023-09-10 22:32:53,544 p=38583 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to
+see details
+
+2023-09-10 22:32:53,699 p=38583 u=belov n=ansible | PLAY [install galaxy roles and collection] ***********************************************
+2023-09-10 22:32:53,703 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:32:54,367 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:54,375 p=38583 u=belov n=ansible | TASK [install geerlingguy.nginx] *********************************************************
+2023-09-10 22:32:54,946 p=38662 u=belov n=ansible | # /home/belov/.ansible/roles
+2023-09-10 22:32:54,947 p=38662 u=belov n=ansible | - geerlingguy.nginx, 3.1.4
+2023-09-10 22:32:54,947 p=38662 u=belov n=ansible | - geerlingguy.apache, 3.3.0
+2023-09-10 22:32:54,948 p=38662 u=belov n=ansible | - geerlingguy.php, 5.0.1
+2023-09-10 22:32:54,948 p=38662 u=belov n=ansible | [WARNING]: - the configured path /usr/share/ansible/roles does not exist.
+
+2023-09-10 22:32:54,948 p=38662 u=belov n=ansible | [WARNING]: - the configured path /etc/ansible/roles does not exist.
+
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | # /home/belov/.local/lib/python3.9/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | amazon.aws                    6.3.0  
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | ansible.netcommon             5.1.2  
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | ansible.posix                 1.5.4  
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | ansible.utils                 2.10.3 
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | ansible.windows               1.14.0 
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | arista.eos                    6.0.1  
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | awx.awx                       22.6.0 
+2023-09-10 22:32:55,177 p=38664 u=belov n=ansible | azure.azcollection            1.16.0 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | check_point.mgmt              5.1.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | chocolatey.chocolatey         1.5.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.aci                     2.7.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.asa                     4.0.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.dnac                    6.7.3  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.intersight              1.0.27 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.ios                     4.6.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.iosxr                   5.0.3  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.ise                     2.5.14 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.meraki                  2.15.3 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.mso                     2.5.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.nso                     1.0.3  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.nxos                    4.4.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cisco.ucs                     1.10.0 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cloud.common                  2.1.4  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | cloudscale_ch.cloud           2.3.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.aws                 6.2.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.azure               2.0.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.ciscosmb            1.0.6  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.crypto              2.15.0 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.digitalocean        1.24.0 
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.dns                 2.6.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.docker              3.4.8  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.fortios             1.0.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.general             7.3.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.google              1.0.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.grafana             1.5.4  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.hashi_vault         5.0.0  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.hrobot              1.8.1  
+2023-09-10 22:32:55,178 p=38664 u=belov n=ansible | community.libvirt             1.2.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.mongodb             1.6.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.mysql               3.7.2  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.network             5.0.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.okd                 2.3.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.postgresql          2.4.3  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.proxysql            1.5.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.rabbitmq            1.2.3  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.routeros            2.9.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.sap                 1.0.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.sap_libs            1.4.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.skydive             1.0.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.sops                1.6.4  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.vmware              3.9.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.windows             1.13.0 
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | community.zabbix              2.1.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | containers.podman             1.10.2 
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | cyberark.conjur               1.2.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | cyberark.pas                  1.0.19 
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | dellemc.enterprise_sonic      2.2.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | dellemc.openmanage            7.6.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | dellemc.powerflex             1.7.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | dellemc.unity                 1.7.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | f5networks.f5_modules         1.25.1 
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | fortinet.fortimanager         2.2.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | fortinet.fortios              2.3.1  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | frr.frr                       2.0.2  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | gluster.gluster               1.0.2  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | google.cloud                  1.2.0  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | grafana.grafana               2.1.5  
+2023-09-10 22:32:55,179 p=38664 u=belov n=ansible | hetzner.hcloud                1.16.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | hpe.nimble                    1.1.4  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ibm.qradar                    2.1.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ibm.spectrum_virtualize       1.12.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | infinidat.infinibox           1.3.12 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | infoblox.nios_modules         1.5.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | inspur.ispim                  1.3.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | inspur.sm                     2.3.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | junipernetworks.junos         5.2.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | kubernetes.core               2.4.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | lowlydba.sqlserver            2.1.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | microsoft.ad                  1.3.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.aws                    21.7.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.azure                  21.10.0
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.cloudmanager           21.22.0
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.elementsw              21.7.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.ontap                  22.7.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.storagegrid            21.11.1
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp.um_info                21.8.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netapp_eseries.santricity     1.4.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | netbox.netbox                 3.13.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ngine_io.cloudstack           2.3.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ngine_io.exoscale             1.0.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ngine_io.vultr                1.1.3  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | openstack.cloud               2.1.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | openvswitch.openvswitch       2.1.1  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | ovirt.ovirt                   3.1.2  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | purestorage.flasharray        1.20.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | purestorage.flashblade        1.12.1 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | purestorage.fusion            1.6.0  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | sensu.sensu_go                1.14.0 
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | servicenow.servicenow         1.0.6  
+2023-09-10 22:32:55,180 p=38664 u=belov n=ansible | splunk.es                     2.1.0  
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | t_systems_mms.icinga_director 1.33.1 
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | telekom_mms.icinga_director   1.34.1 
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | theforeman.foreman            3.12.0 
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | vmware.vmware_rest            2.3.1  
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | vultr.cloud                   1.8.0  
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | vyos.vyos                     4.1.0  
+2023-09-10 22:32:55,181 p=38664 u=belov n=ansible | wti.remote                    1.0.5  
+2023-09-10 22:32:55,395 p=38666 u=belov n=ansible | Starting galaxy role install process
+2023-09-10 22:32:55,395 p=38666 u=belov n=ansible | [WARNING]: - geerlingguy.nginx (3.1.4) is already installed - use --force to
+change version to unspecified
+
+2023-09-10 22:32:55,428 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:55,431 p=38583 u=belov n=ansible | TASK [install geerlingguy.apache] ********************************************************
+2023-09-10 22:32:55,920 p=38696 u=belov n=ansible | # /home/belov/.ansible/roles
+2023-09-10 22:32:55,921 p=38696 u=belov n=ansible | - geerlingguy.nginx, 3.1.4
+2023-09-10 22:32:55,921 p=38696 u=belov n=ansible | - geerlingguy.apache, 3.3.0
+2023-09-10 22:32:55,921 p=38696 u=belov n=ansible | - geerlingguy.php, 5.0.1
+2023-09-10 22:32:55,921 p=38696 u=belov n=ansible | [WARNING]: - the configured path /usr/share/ansible/roles does not exist.
+
+2023-09-10 22:32:55,921 p=38696 u=belov n=ansible | [WARNING]: - the configured path /etc/ansible/roles does not exist.
+
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | # /home/belov/.local/lib/python3.9/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | amazon.aws                    6.3.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | ansible.netcommon             5.1.2  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | ansible.posix                 1.5.4  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | ansible.utils                 2.10.3 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | ansible.windows               1.14.0 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | arista.eos                    6.0.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | awx.awx                       22.6.0 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | azure.azcollection            1.16.0 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | check_point.mgmt              5.1.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | chocolatey.chocolatey         1.5.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.aci                     2.7.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.asa                     4.0.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.dnac                    6.7.3  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.intersight              1.0.27 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.ios                     4.6.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.iosxr                   5.0.3  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.ise                     2.5.14 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.meraki                  2.15.3 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.mso                     2.5.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.nso                     1.0.3  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.nxos                    4.4.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cisco.ucs                     1.10.0 
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cloud.common                  2.1.4  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | cloudscale_ch.cloud           2.3.1  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | community.aws                 6.2.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | community.azure               2.0.0  
+2023-09-10 22:32:56,174 p=38698 u=belov n=ansible | community.ciscosmb            1.0.6  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.crypto              2.15.0 
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.digitalocean        1.24.0 
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.dns                 2.6.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.docker              3.4.8  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.fortios             1.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.general             7.3.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.google              1.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.grafana             1.5.4  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.hashi_vault         5.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.hrobot              1.8.1  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.libvirt             1.2.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.mongodb             1.6.1  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.mysql               3.7.2  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.network             5.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.okd                 2.3.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.postgresql          2.4.3  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.proxysql            1.5.1  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.rabbitmq            1.2.3  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.routeros            2.9.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.sap                 1.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.sap_libs            1.4.1  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.skydive             1.0.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.sops                1.6.4  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.vmware              3.9.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.windows             1.13.0 
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | community.zabbix              2.1.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | containers.podman             1.10.2 
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | cyberark.conjur               1.2.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | cyberark.pas                  1.0.19 
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | dellemc.enterprise_sonic      2.2.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | dellemc.openmanage            7.6.1  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | dellemc.powerflex             1.7.0  
+2023-09-10 22:32:56,175 p=38698 u=belov n=ansible | dellemc.unity                 1.7.1  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | f5networks.f5_modules         1.25.1 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | fortinet.fortimanager         2.2.1  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | fortinet.fortios              2.3.1  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | frr.frr                       2.0.2  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | gluster.gluster               1.0.2  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | google.cloud                  1.2.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | grafana.grafana               2.1.5  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | hetzner.hcloud                1.16.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | hpe.nimble                    1.1.4  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | ibm.qradar                    2.1.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | ibm.spectrum_virtualize       1.12.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | infinidat.infinibox           1.3.12 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | infoblox.nios_modules         1.5.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | inspur.ispim                  1.3.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | inspur.sm                     2.3.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | junipernetworks.junos         5.2.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | kubernetes.core               2.4.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | lowlydba.sqlserver            2.1.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | microsoft.ad                  1.3.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.aws                    21.7.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.azure                  21.10.0
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.cloudmanager           21.22.0
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.elementsw              21.7.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.ontap                  22.7.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.storagegrid            21.11.1
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp.um_info                21.8.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netapp_eseries.santricity     1.4.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | netbox.netbox                 3.13.0 
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | ngine_io.cloudstack           2.3.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | ngine_io.exoscale             1.0.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | ngine_io.vultr                1.1.3  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | openstack.cloud               2.1.0  
+2023-09-10 22:32:56,176 p=38698 u=belov n=ansible | openvswitch.openvswitch       2.1.1  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | ovirt.ovirt                   3.1.2  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | purestorage.flasharray        1.20.0 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | purestorage.flashblade        1.12.1 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | purestorage.fusion            1.6.0  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | sensu.sensu_go                1.14.0 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | servicenow.servicenow         1.0.6  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | splunk.es                     2.1.0  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | t_systems_mms.icinga_director 1.33.1 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | telekom_mms.icinga_director   1.34.1 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | theforeman.foreman            3.12.0 
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | vmware.vmware_rest            2.3.1  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | vultr.cloud                   1.8.0  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | vyos.vyos                     4.1.0  
+2023-09-10 22:32:56,177 p=38698 u=belov n=ansible | wti.remote                    1.0.5  
+2023-09-10 22:32:56,377 p=38700 u=belov n=ansible | Starting galaxy role install process
+2023-09-10 22:32:56,377 p=38700 u=belov n=ansible | [WARNING]: - geerlingguy.apache (3.3.0) is already installed - use --force to
+change version to unspecified
+
+2023-09-10 22:32:56,410 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:56,414 p=38583 u=belov n=ansible | TASK [install geerlingguy.php] ***********************************************************
+2023-09-10 22:32:56,917 p=38730 u=belov n=ansible | # /home/belov/.ansible/roles
+2023-09-10 22:32:56,918 p=38730 u=belov n=ansible | - geerlingguy.nginx, 3.1.4
+2023-09-10 22:32:56,918 p=38730 u=belov n=ansible | - geerlingguy.apache, 3.3.0
+2023-09-10 22:32:56,918 p=38730 u=belov n=ansible | - geerlingguy.php, 5.0.1
+2023-09-10 22:32:56,919 p=38730 u=belov n=ansible | [WARNING]: - the configured path /usr/share/ansible/roles does not exist.
+
+2023-09-10 22:32:56,919 p=38730 u=belov n=ansible | [WARNING]: - the configured path /etc/ansible/roles does not exist.
+
+2023-09-10 22:32:57,129 p=38732 u=belov n=ansible | # /home/belov/.local/lib/python3.9/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | amazon.aws                    6.3.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | ansible.netcommon             5.1.2  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | ansible.posix                 1.5.4  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | ansible.utils                 2.10.3 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | ansible.windows               1.14.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | arista.eos                    6.0.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | awx.awx                       22.6.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | azure.azcollection            1.16.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | check_point.mgmt              5.1.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | chocolatey.chocolatey         1.5.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.aci                     2.7.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.asa                     4.0.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.dnac                    6.7.3  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.intersight              1.0.27 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.ios                     4.6.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.iosxr                   5.0.3  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.ise                     2.5.14 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.meraki                  2.15.3 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.mso                     2.5.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.nso                     1.0.3  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.nxos                    4.4.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cisco.ucs                     1.10.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cloud.common                  2.1.4  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | cloudscale_ch.cloud           2.3.1  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.aws                 6.2.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.azure               2.0.0  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.ciscosmb            1.0.6  
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.crypto              2.15.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.digitalocean        1.24.0 
+2023-09-10 22:32:57,130 p=38732 u=belov n=ansible | community.dns                 2.6.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.docker              3.4.8  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.fortios             1.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.general             7.3.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.google              1.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.grafana             1.5.4  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.hashi_vault         5.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.hrobot              1.8.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.libvirt             1.2.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.mongodb             1.6.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.mysql               3.7.2  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.network             5.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.okd                 2.3.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.postgresql          2.4.3  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.proxysql            1.5.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.rabbitmq            1.2.3  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.routeros            2.9.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.sap                 1.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.sap_libs            1.4.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.skydive             1.0.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.sops                1.6.4  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.vmware              3.9.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.windows             1.13.0 
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | community.zabbix              2.1.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | containers.podman             1.10.2 
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | cyberark.conjur               1.2.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | cyberark.pas                  1.0.19 
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | dellemc.enterprise_sonic      2.2.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | dellemc.openmanage            7.6.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | dellemc.powerflex             1.7.0  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | dellemc.unity                 1.7.1  
+2023-09-10 22:32:57,131 p=38732 u=belov n=ansible | f5networks.f5_modules         1.25.1 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | fortinet.fortimanager         2.2.1  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | fortinet.fortios              2.3.1  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | frr.frr                       2.0.2  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | gluster.gluster               1.0.2  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | google.cloud                  1.2.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | grafana.grafana               2.1.5  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | hetzner.hcloud                1.16.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | hpe.nimble                    1.1.4  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ibm.qradar                    2.1.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ibm.spectrum_virtualize       1.12.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | infinidat.infinibox           1.3.12 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | infoblox.nios_modules         1.5.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | inspur.ispim                  1.3.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | inspur.sm                     2.3.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | junipernetworks.junos         5.2.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | kubernetes.core               2.4.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | lowlydba.sqlserver            2.1.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | microsoft.ad                  1.3.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.aws                    21.7.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.azure                  21.10.0
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.cloudmanager           21.22.0
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.elementsw              21.7.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.ontap                  22.7.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.storagegrid            21.11.1
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp.um_info                21.8.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netapp_eseries.santricity     1.4.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | netbox.netbox                 3.13.0 
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ngine_io.cloudstack           2.3.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ngine_io.exoscale             1.0.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ngine_io.vultr                1.1.3  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | openstack.cloud               2.1.0  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | openvswitch.openvswitch       2.1.1  
+2023-09-10 22:32:57,132 p=38732 u=belov n=ansible | ovirt.ovirt                   3.1.2  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | purestorage.flasharray        1.20.0 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | purestorage.flashblade        1.12.1 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | purestorage.fusion            1.6.0  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | sensu.sensu_go                1.14.0 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | servicenow.servicenow         1.0.6  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | splunk.es                     2.1.0  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | t_systems_mms.icinga_director 1.33.1 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | telekom_mms.icinga_director   1.34.1 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | theforeman.foreman            3.12.0 
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | vmware.vmware_rest            2.3.1  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | vultr.cloud                   1.8.0  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | vyos.vyos                     4.1.0  
+2023-09-10 22:32:57,133 p=38732 u=belov n=ansible | wti.remote                    1.0.5  
+2023-09-10 22:32:57,359 p=38734 u=belov n=ansible | Starting galaxy role install process
+2023-09-10 22:32:57,359 p=38734 u=belov n=ansible | [WARNING]: - geerlingguy.nginx (3.1.4) is already installed - use --force to
+change version to unspecified
+
+2023-09-10 22:32:57,410 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:57,413 p=38583 u=belov n=ansible | TASK [install zabbix] ********************************************************************
+2023-09-10 22:32:57,924 p=38764 u=belov n=ansible | # /home/belov/.local/lib/python3.9/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-09-10 22:32:57,924 p=38764 u=belov n=ansible | amazon.aws                    6.3.0  
+2023-09-10 22:32:57,924 p=38764 u=belov n=ansible | ansible.netcommon             5.1.2  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | ansible.posix                 1.5.4  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | ansible.utils                 2.10.3 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | ansible.windows               1.14.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | arista.eos                    6.0.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | awx.awx                       22.6.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | azure.azcollection            1.16.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | check_point.mgmt              5.1.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | chocolatey.chocolatey         1.5.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.aci                     2.7.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.asa                     4.0.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.dnac                    6.7.3  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.intersight              1.0.27 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.ios                     4.6.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.iosxr                   5.0.3  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.ise                     2.5.14 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.meraki                  2.15.3 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.mso                     2.5.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.nso                     1.0.3  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.nxos                    4.4.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cisco.ucs                     1.10.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cloud.common                  2.1.4  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | cloudscale_ch.cloud           2.3.1  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.aws                 6.2.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.azure               2.0.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.ciscosmb            1.0.6  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.crypto              2.15.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.digitalocean        1.24.0 
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.dns                 2.6.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.docker              3.4.8  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.fortios             1.0.0  
+2023-09-10 22:32:57,925 p=38764 u=belov n=ansible | community.general             7.3.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.google              1.0.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.grafana             1.5.4  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.hashi_vault         5.0.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.hrobot              1.8.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.libvirt             1.2.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.mongodb             1.6.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.mysql               3.7.2  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.network             5.0.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.okd                 2.3.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.postgresql          2.4.3  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.proxysql            1.5.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.rabbitmq            1.2.3  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.routeros            2.9.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.sap                 1.0.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.sap_libs            1.4.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.skydive             1.0.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.sops                1.6.4  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.vmware              3.9.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.windows             1.13.0 
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | community.zabbix              2.1.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | containers.podman             1.10.2 
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | cyberark.conjur               1.2.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | cyberark.pas                  1.0.19 
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | dellemc.enterprise_sonic      2.2.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | dellemc.openmanage            7.6.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | dellemc.powerflex             1.7.0  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | dellemc.unity                 1.7.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | f5networks.f5_modules         1.25.1 
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | fortinet.fortimanager         2.2.1  
+2023-09-10 22:32:57,926 p=38764 u=belov n=ansible | fortinet.fortios              2.3.1  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | frr.frr                       2.0.2  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | gluster.gluster               1.0.2  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | google.cloud                  1.2.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | grafana.grafana               2.1.5  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | hetzner.hcloud                1.16.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | hpe.nimble                    1.1.4  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ibm.qradar                    2.1.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ibm.spectrum_virtualize       1.12.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | infinidat.infinibox           1.3.12 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | infoblox.nios_modules         1.5.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | inspur.ispim                  1.3.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | inspur.sm                     2.3.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | junipernetworks.junos         5.2.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | kubernetes.core               2.4.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | lowlydba.sqlserver            2.1.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | microsoft.ad                  1.3.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.aws                    21.7.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.azure                  21.10.0
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.cloudmanager           21.22.0
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.elementsw              21.7.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.ontap                  22.7.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.storagegrid            21.11.1
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp.um_info                21.8.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netapp_eseries.santricity     1.4.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | netbox.netbox                 3.13.0 
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ngine_io.cloudstack           2.3.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ngine_io.exoscale             1.0.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ngine_io.vultr                1.1.3  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | openstack.cloud               2.1.0  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | openvswitch.openvswitch       2.1.1  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | ovirt.ovirt                   3.1.2  
+2023-09-10 22:32:57,927 p=38764 u=belov n=ansible | purestorage.flasharray        1.20.0 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | purestorage.flashblade        1.12.1 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | purestorage.fusion            1.6.0  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | sensu.sensu_go                1.14.0 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | servicenow.servicenow         1.0.6  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | splunk.es                     2.1.0  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | t_systems_mms.icinga_director 1.33.1 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | telekom_mms.icinga_director   1.34.1 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | theforeman.foreman            3.12.0 
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | vmware.vmware_rest            2.3.1  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | vultr.cloud                   1.8.0  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | vyos.vyos                     4.1.0  
+2023-09-10 22:32:57,928 p=38764 u=belov n=ansible | wti.remote                    1.0.5  
+2023-09-10 22:32:58,130 p=38766 u=belov n=ansible | Starting galaxy collection install process
+2023-09-10 22:32:58,228 p=38766 u=belov n=ansible | Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
+2023-09-10 22:32:58,263 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:58,266 p=38583 u=belov n=ansible | TASK [install postgresql] ****************************************************************
+2023-09-10 22:32:58,795 p=38796 u=belov n=ansible | # /home/belov/.local/lib/python3.9/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | amazon.aws                    6.3.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | ansible.netcommon             5.1.2  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | ansible.posix                 1.5.4  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | ansible.utils                 2.10.3 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | ansible.windows               1.14.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | arista.eos                    6.0.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | awx.awx                       22.6.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | azure.azcollection            1.16.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | check_point.mgmt              5.1.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | chocolatey.chocolatey         1.5.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.aci                     2.7.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.asa                     4.0.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.dnac                    6.7.3  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.intersight              1.0.27 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.ios                     4.6.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.iosxr                   5.0.3  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.ise                     2.5.14 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.meraki                  2.15.3 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.mso                     2.5.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.nso                     1.0.3  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.nxos                    4.4.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cisco.ucs                     1.10.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cloud.common                  2.1.4  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | cloudscale_ch.cloud           2.3.1  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.aws                 6.2.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.azure               2.0.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.ciscosmb            1.0.6  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.crypto              2.15.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.digitalocean        1.24.0 
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.dns                 2.6.0  
+2023-09-10 22:32:58,796 p=38796 u=belov n=ansible | community.docker              3.4.8  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.fortios             1.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.general             7.3.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.google              1.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.grafana             1.5.4  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.hashi_vault         5.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.hrobot              1.8.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.libvirt             1.2.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.mongodb             1.6.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.mysql               3.7.2  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.network             5.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.okd                 2.3.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.postgresql          2.4.3  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.proxysql            1.5.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.rabbitmq            1.2.3  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.routeros            2.9.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.sap                 1.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.sap_libs            1.4.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.skydive             1.0.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.sops                1.6.4  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.vmware              3.9.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.windows             1.13.0 
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | community.zabbix              2.1.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | containers.podman             1.10.2 
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | cyberark.conjur               1.2.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | cyberark.pas                  1.0.19 
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | dellemc.enterprise_sonic      2.2.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | dellemc.openmanage            7.6.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | dellemc.powerflex             1.7.0  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | dellemc.unity                 1.7.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | f5networks.f5_modules         1.25.1 
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | fortinet.fortimanager         2.2.1  
+2023-09-10 22:32:58,797 p=38796 u=belov n=ansible | fortinet.fortios              2.3.1  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | frr.frr                       2.0.2  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | gluster.gluster               1.0.2  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | google.cloud                  1.2.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | grafana.grafana               2.1.5  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | hetzner.hcloud                1.16.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | hpe.nimble                    1.1.4  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ibm.qradar                    2.1.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ibm.spectrum_virtualize       1.12.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | infinidat.infinibox           1.3.12 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | infoblox.nios_modules         1.5.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | inspur.ispim                  1.3.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | inspur.sm                     2.3.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | junipernetworks.junos         5.2.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | kubernetes.core               2.4.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | lowlydba.sqlserver            2.1.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | microsoft.ad                  1.3.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.aws                    21.7.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.azure                  21.10.0
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.cloudmanager           21.22.0
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.elementsw              21.7.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.ontap                  22.7.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.storagegrid            21.11.1
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp.um_info                21.8.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netapp_eseries.santricity     1.4.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | netbox.netbox                 3.13.0 
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ngine_io.cloudstack           2.3.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ngine_io.exoscale             1.0.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ngine_io.vultr                1.1.3  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | openstack.cloud               2.1.0  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | openvswitch.openvswitch       2.1.1  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | ovirt.ovirt                   3.1.2  
+2023-09-10 22:32:58,798 p=38796 u=belov n=ansible | purestorage.flasharray        1.20.0 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | purestorage.flashblade        1.12.1 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | purestorage.fusion            1.6.0  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | sensu.sensu_go                1.14.0 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | servicenow.servicenow         1.0.6  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | splunk.es                     2.1.0  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | t_systems_mms.icinga_director 1.33.1 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | telekom_mms.icinga_director   1.34.1 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | theforeman.foreman            3.12.0 
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | vmware.vmware_rest            2.3.1  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | vultr.cloud                   1.8.0  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | vyos.vyos                     4.1.0  
+2023-09-10 22:32:58,799 p=38796 u=belov n=ansible | wti.remote                    1.0.5  
+2023-09-10 22:32:59,000 p=38798 u=belov n=ansible | Starting galaxy collection install process
+2023-09-10 22:32:59,108 p=38798 u=belov n=ansible | Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
+2023-09-10 22:32:59,145 p=38583 u=belov n=ansible | ok: [localhost]
+2023-09-10 22:32:59,157 p=38583 u=belov n=ansible | PLAY [install nginx] *********************************************************************
+2023-09-10 22:32:59,161 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:33:01,290 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:01,346 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:01,360 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Include OS-specific variables.] ********************************
+2023-09-10 22:33:01,375 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:01,381 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:01,384 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Define nginx_user.] ********************************************
+2023-09-10 22:33:01,404 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:01,419 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:01,423 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:01,435 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:01,441 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:01,444 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:01,457 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:01,464 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:01,467 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:01,512 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.nginx/tasks/setup-Debian.yml for vm-1, vm-2
+2023-09-10 22:33:01,518 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Update apt cache.] *********************************************
+2023-09-10 22:33:02,779 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:02,865 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:02,868 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx is installed.] ************************************
+2023-09-10 22:33:04,215 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:04,325 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:04,328 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:04,338 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:04,346 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:04,349 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:04,362 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:04,368 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:04,371 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] *************************************************
+2023-09-10 22:33:04,381 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:04,390 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:04,393 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Remove default nginx vhost config file (if configured).] *******
+2023-09-10 22:33:04,411 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:04,417 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:04,421 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx_vhost_path exists.] *******************************
+2023-09-10 22:33:05,171 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:05,241 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:05,244 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Add managed vhost config files.] *******************************
+2023-09-10 22:33:05,256 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:05,264 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:05,268 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Remove managed vhost config files.] ****************************
+2023-09-10 22:33:05,278 p=38583 u=belov n=ansible | skipping: [vm-1]
+2023-09-10 22:33:05,286 p=38583 u=belov n=ansible | skipping: [vm-2]
+2023-09-10 22:33:05,289 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Remove legacy vhosts.conf file.] *******************************
+2023-09-10 22:33:06,021 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:06,034 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:06,037 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Copy nginx configuration in place.] ****************************
+2023-09-10 22:33:07,369 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:07,403 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:07,407 p=38583 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx service is running as configured.] ****************
+2023-09-10 22:33:08,461 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:08,514 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:08,540 p=38583 u=belov n=ansible | PLAY [setting up nginx] ******************************************************************
+2023-09-10 22:33:08,543 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:33:09,787 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:09,864 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:09,876 p=38583 u=belov n=ansible | TASK [copy index] ************************************************************************
+2023-09-10 22:33:11,011 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:11,117 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:11,121 p=38583 u=belov n=ansible | TASK [copy web.conf] *********************************************************************
+2023-09-10 22:33:12,319 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:12,504 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:12,507 p=38583 u=belov n=ansible | TASK [start nginx] ***********************************************************************
+2023-09-10 22:33:13,339 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:33:13,419 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:33:13,441 p=38583 u=belov n=ansible | PLAY [install postgresql] ****************************************************************
+2023-09-10 22:33:13,444 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:33:15,293 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:15,300 p=38583 u=belov n=ansible | TASK [psql : install postgresql libpq pip] ***********************************************
+2023-09-10 22:33:17,935 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:17,938 p=38583 u=belov n=ansible | TASK [psql : install psycopg2] ***********************************************************
+2023-09-10 22:33:20,325 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:20,328 p=38583 u=belov n=ansible | TASK [psql : start postgresql] ***********************************************************
+2023-09-10 22:33:21,095 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:21,112 p=38583 u=belov n=ansible | PLAY [install zabbix-server] *************************************************************
+2023-09-10 22:33:21,121 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:33:22,366 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:22,374 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Include OS-specific variables.] *******************************
+2023-09-10 22:33:22,387 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:22,390 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Include variables for Amazon Linux.] **************************
+2023-09-10 22:33:22,403 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:22,406 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Define apache_packages.] **************************************
+2023-09-10 22:33:22,442 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:22,445 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : include_tasks] ************************************************
+2023-09-10 22:33:22,459 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.apache/tasks/setup-Debian.yml for 192.168.11.30
+2023-09-10 22:33:22,463 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Update apt cache.] ********************************************
+2023-09-10 22:33:23,500 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:23,503 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Ensure Apache is installed on Debian.] ************************
+2023-09-10 22:33:24,830 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:24,833 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Get installed version of Apache.] *****************************
+2023-09-10 22:33:25,753 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:25,757 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Create apache_version variable.] ******************************
+2023-09-10 22:33:25,773 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:25,776 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Include Apache 2.2 variables.] ********************************
+2023-09-10 22:33:25,786 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:25,790 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Include Apache 2.4 variables.] ********************************
+2023-09-10 22:33:25,805 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:25,808 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Configure Apache.] ********************************************
+2023-09-10 22:33:25,825 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.apache/tasks/configure-Debian.yml for 192.168.11.30
+2023-09-10 22:33:25,829 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Configure Apache.] ********************************************
+2023-09-10 22:33:26,601 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item={'regexp': '^Listen ', 'line': 'Listen 80'})
+2023-09-10 22:33:26,606 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Enable Apache mods.] ******************************************
+2023-09-10 22:33:27,331 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=rewrite)
+2023-09-10 22:33:28,032 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=ssl)
+2023-09-10 22:33:28,036 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Disable Apache mods.] *****************************************
+2023-09-10 22:33:28,047 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:28,051 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Check whether certificates defined in vhosts exist.] **********
+2023-09-10 22:33:28,062 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:28,065 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Add apache vhosts configuration.] *****************************
+2023-09-10 22:33:29,326 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:29,330 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Add vhost symlink in sites-enabled.] **************************
+2023-09-10 22:33:30,044 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:30,048 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Remove default vhost in sites-enabled.] ***********************
+2023-09-10 22:33:30,060 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:30,063 p=38583 u=belov n=ansible | TASK [geerlingguy.apache : Ensure Apache has selected state and enabled on boot.] ********
+2023-09-10 22:33:30,950 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:30,956 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Include OS-specific variables.] **********************************
+2023-09-10 22:33:30,974 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:30,977 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Include distribution and version-specific vars.] *****************
+2023-09-10 22:33:30,993 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/home/belov/.ansible/roles/geerlingguy.php/vars/Debian-11.yml)
+2023-09-10 22:33:30,997 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Set the default PHP version for Debian-based OSes.] **************
+2023-09-10 22:33:31,021 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,025 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define the name of the JSON extension package on Debian for PHP <8.] ***
+2023-09-10 22:33:31,041 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,045 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Add the JSON extension on Debian for PHP <8.] ********************
+2023-09-10 22:33:31,075 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,079 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_packages.] ********************************************
+2023-09-10 22:33:31,110 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,113 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_webserver_daemon.] ************************************
+2023-09-10 22:33:31,133 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,137 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_conf_paths.] ******************************************
+2023-09-10 22:33:31,158 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,174 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_extension_conf_paths.] ********************************
+2023-09-10 22:33:31,196 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,199 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_apc_conf_filename.] ***********************************
+2023-09-10 22:33:31,220 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,223 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_opcache_conf_filename (Ubuntu 16.04).] ****************
+2023-09-10 22:33:31,242 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:31,245 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_opcache_conf_filename.] *******************************
+2023-09-10 22:33:31,266 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,269 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_conf_path.] ***************************************
+2023-09-10 22:33:31,292 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:31,296 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:31,309 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:31,312 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:31,329 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/setup-Debian.yml for 192.168.11.30
+2023-09-10 22:33:31,333 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Update apt cache.] ***********************************************
+2023-09-10 22:33:32,442 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:32,446 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure PHP packages are installed.] ******************************
+2023-09-10 22:33:33,727 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:33,730 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Delete APCu configuration file if this role will provide one.] ***
+2023-09-10 22:33:33,747 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-10 22:33:33,749 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-10 22:33:33,749 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-10 22:33:33,750 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:33,753 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Delete OpCache configuration file if this role will provide one.] ***
+2023-09-10 22:33:33,777 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-10 22:33:33,779 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-10 22:33:33,779 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-10 22:33:33,780 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:33,783 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:33,793 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:33,799 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:33,817 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure.yml for 192.168.11.30
+2023-09-10 22:33:33,825 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure configuration directories exist.] *************************
+2023-09-10 22:33:34,516 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm)
+2023-09-10 22:33:35,269 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2)
+2023-09-10 22:33:36,001 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli)
+2023-09-10 22:33:36,795 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-10 22:33:37,536 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-10 22:33:38,502 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-10 22:33:38,506 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Place PHP configuration file in place.] **************************
+2023-09-10 22:33:39,741 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm)
+2023-09-10 22:33:40,931 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2)
+2023-09-10 22:33:42,030 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli)
+2023-09-10 22:33:42,033 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:42,045 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-apcu.yml for 192.168.11.30
+2023-09-10 22:33:42,053 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Check for existing APCu config files.] ***************************
+2023-09-10 22:33:42,808 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-10 22:33:43,497 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-10 22:33:44,186 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-10 22:33:44,196 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Remove any non-role-supplied APCu config files.] *****************
+2023-09-10 22:33:44,227 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/fpm/conf.d'], 'contains': 'extension(\\s+)?=(\\s+)?apc[u]?\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/fpm/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/fpm/conf.d/20-apcu.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 66, 'inode': 138543, 'dev': 65026, 'nlink': 1, 'atime': 1694373550.3155112, 'mtime': 1694373546.1075208, 'ctime': 1694373546.6595197, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:44,236 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/apache2/conf.d'], 'contains': 'extension(\\s+)?=(\\s+)?apc[u]?\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/apache2/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/apache2/conf.d/20-apcu.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 66, 'inode': 138546, 'dev': 65026, 'nlink': 1, 'atime': 1694373550.9915097, 'mtime': 1694373547.5115178, 'ctime': 1694373548.1195164, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:44,241 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/cli/conf.d'], 'contains': 'extension(\\s+)?=(\\s+)?apc[u]?\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/cli/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/cli/conf.d/20-apcu.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 66, 'inode': 138554, 'dev': 65026, 'nlink': 1, 'atime': 1694373551.687508, 'mtime': 1694373548.9955144, 'ctime': 1694373549.547513, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:44,243 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:44,247 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure APCu config file is present.] *****************************
+2023-09-10 22:33:45,555 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-10 22:33:46,801 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-10 22:33:47,958 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-10 22:33:47,961 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Remove APCu config file if APC is disabled.] *********************
+2023-09-10 22:33:47,978 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-10 22:33:47,979 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-10 22:33:47,989 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-10 22:33:48,004 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:48,008 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:48,022 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-opcache.yml for 192.168.11.30
+2023-09-10 22:33:48,031 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Check for existing OpCache config files.] ************************
+2023-09-10 22:33:48,703 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-10 22:33:49,331 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-10 22:33:49,997 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-10 22:33:50,003 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Remove any non-role-supplied OpCache config files.] **************
+2023-09-10 22:33:50,038 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/fpm/conf.d'], 'contains': 'zend_extension(\\s+)?=(\\s+)?opcache\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/fpm/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/fpm/conf.d/10-opcache.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 302, 'inode': 138558, 'dev': 65026, 'nlink': 1, 'atime': 1694373666.9073048, 'mtime': 1694373552.5995061, 'ctime': 1694373553.055505, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:50,045 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/apache2/conf.d'], 'contains': 'zend_extension(\\s+)?=(\\s+)?opcache\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/apache2/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/apache2/conf.d/10-opcache.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 302, 'inode': 138559, 'dev': 65026, 'nlink': 1, 'atime': 1694373661.6433103, 'mtime': 1694373553.919503, 'ctime': 1694373554.4515018, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:50,050 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=[{'changed': False, 'msg': 'All paths examined', 'matched': 1, 'examined': 38, 'skipped_paths': {}, 'invocation': {'module_args': {'paths': ['/etc/php/7.4/cli/conf.d'], 'contains': 'zend_extension(\\s+)?=(\\s+)?opcache\\.so', 'patterns': ['*'], 'read_whole_file': False, 'file_type': 'file', 'age_stamp': 'mtime', 'recurse': False, 'hidden': False, 'follow': False, 'get_checksum': False, 'use_regex': False, 'excludes': None, 'age': None, 'size': None, 'depth': None}}, 'failed': False, 'item': '/etc/php/7.4/cli/conf.d', 'ansible_loop_var': 'item'}, {'path': '/etc/php/7.4/cli/conf.d/10-opcache.ini', 'mode': '0644', 'isdir': False, 'ischr': False, 'isblk': False, 'isreg': True, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 302, 'inode': 138560, 'dev': 65026, 'nlink': 1, 'atime': 1694373655.2313168, 'mtime': 1694373555.2595, 'ctime': 1694373555.8194988, 'gr_name': 'root', 'pw_name': 'root', 'wusr': True, 'rusr': True, 'xusr': False, 'wgrp': False, 'rgrp': True, 'xgrp': False, 'woth': False, 'roth': True, 'xoth': False, 'isuid': False, 'isgid': False}]) 
+2023-09-10 22:33:50,051 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:50,054 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure OpCache config file is present.] **************************
+2023-09-10 22:33:51,450 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-10 22:33:52,616 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-10 22:33:53,734 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-10 22:33:53,738 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Remove OpCache config file if OpCache is disabled.] **************
+2023-09-10 22:33:53,762 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-10 22:33:53,764 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-10 22:33:53,764 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-10 22:33:53,766 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:53,771 p=38583 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ***************************************************
+2023-09-10 22:33:53,787 p=38583 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-fpm.yml for 192.168.11.30
+2023-09-10 22:33:53,793 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_daemon.] ******************************************
+2023-09-10 22:33:53,815 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:53,818 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_conf_path.] **********************************
+2023-09-10 22:33:53,841 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:53,844 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_user.] ***************************************
+2023-09-10 22:33:53,864 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:53,870 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_group.] **************************************
+2023-09-10 22:33:53,889 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:53,893 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Stat php_fpm_pool_conf_path] *************************************
+2023-09-10 22:33:54,601 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,604 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure the default pool directory exists.] ***********************
+2023-09-10 22:33:54,621 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:54,624 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Create fpm pools.] ***********************************************
+2023-09-10 22:33:54,653 p=38583 u=belov n=ansible | skipping: [192.168.11.30] => (item={'pool_name': 'www', 'pool_template': 'www.conf.j2', 'pool_listen': '127.0.0.1:9000', 'pool_listen_allowed_clients': '127.0.0.1', 'pool_pm': 'dynamic', 'pool_pm_max_children': 50, 'pool_pm_start_servers': 5, 'pool_pm_min_spare_servers': 5, 'pool_pm_max_spare_servers': 5, 'pool_pm_max_requests': 0, 'pool_pm_status_path': ''}) 
+2023-09-10 22:33:54,655 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:54,658 p=38583 u=belov n=ansible | TASK [geerlingguy.php : Ensure php-fpm is started and enabled at boot (if configured).] ***
+2023-09-10 22:33:54,668 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:54,677 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Include OS-specific variables] ********************
+2023-09-10 22:33:54,692 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,696 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Determine Latest Supported Zabbix Version] ********
+2023-09-10 22:33:54,740 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,744 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Set More Variables] *******************************
+2023-09-10 22:33:54,778 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,783 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Stopping Install of Invalid Version] **************
+2023-09-10 22:33:54,801 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:54,805 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Install the correct repository] *******************
+2023-09-10 22:33:54,832 p=38583 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_server/tasks/Debian.yml for 192.168.11.30
+2023-09-10 22:33:54,837 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some variables] **********************
+2023-09-10 22:33:54,866 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,871 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some variables] **********************
+2023-09-10 22:33:54,884 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:54,888 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some facts for Zabbix] ***************
+2023-09-10 22:33:54,901 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:54,905 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing gnupg] ************************
+2023-09-10 22:33:56,237 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:56,241 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Create /etc/apt/keyrings/ on older versions] ***
+2023-09-10 22:33:56,921 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:56,924 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Download gpg key] ************************
+2023-09-10 22:33:58,080 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:33:58,084 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing repository Debian] ************
+2023-09-10 22:33:59,059 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=deb-src)
+2023-09-10 22:33:59,919 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=deb)
+2023-09-10 22:33:59,922 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Create /etc/apt/preferences.d/] **********
+2023-09-10 22:33:59,943 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:59,949 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Configuring the weight for APT] **********
+2023-09-10 22:33:59,971 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:33:59,975 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | apt-get clean] ***************************
+2023-09-10 22:34:02,693 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:02,697 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Check for the dpkg exclude line] *********
+2023-09-10 22:34:03,386 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:03,389 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Allow Zabbix dpkg installs to /usr/share/doc/zabbix*] ***
+2023-09-10 22:34:03,403 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:03,409 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing zabbix-server-pgsql] **********
+2023-09-10 22:34:06,325 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:06,329 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing zabbix-sql-scripts] ***********
+2023-09-10 22:34:09,237 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:09,240 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Install Mysql Client package] ************
+2023-09-10 22:34:09,253 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:09,257 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian 10 | Install Mysql Client package] *********
+2023-09-10 22:34:09,276 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:09,281 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Install PostgreSQL Client package] *******
+2023-09-10 22:34:10,600 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:10,604 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Installing the postgresql database] ***************
+2023-09-10 22:34:10,640 p=38583 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_server/tasks/postgresql.yml for 192.168.11.30
+2023-09-10 22:34:10,648 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Set the correct delegated_dbhost (to support postgres db deployment on a remote dbhost)] ***
+2023-09-10 22:34:10,662 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:10,666 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Set the correct delegated_dbhost (to support postgres db deployment on a remote dbhost)] ***
+2023-09-10 22:34:10,674 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:10,678 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create database] *********
+2023-09-10 22:34:11,444 p=38583 u=belov n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create
+when becoming an unprivileged user. This may be insecure. For information on securing
+this, see https://docs.ansible.com/ansible-
+core/2.15/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-
+unprivileged-user#risks-of-becoming-an-unprivileged-user
+
+2023-09-10 22:34:11,878 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:11,881 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create database user] ****
+2023-09-10 22:34:12,598 p=38583 u=belov n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create
+when becoming an unprivileged user. This may be insecure. For information on securing
+this, see https://docs.ansible.com/ansible-
+core/2.15/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-
+unprivileged-user#risks-of-becoming-an-unprivileged-user
+
+2023-09-10 22:34:13,075 p=38583 u=belov n=ansible | [DEPRECATION WARNING]: Param 'priv' is deprecated. See the module docs for more 
+information. This feature will be removed from community.postgreql in version 3.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-09-10 22:34:13,075 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:13,078 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create timescaledb extension] ***
+2023-09-10 22:34:13,101 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:13,105 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create database] ************
+2023-09-10 22:34:13,122 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:13,126 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create database user] *******
+2023-09-10 22:34:13,141 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:13,159 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create timescaledb extension] ***
+2023-09-10 22:34:13,175 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:13,179 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Create schema] ***********************
+2023-09-10 22:34:13,874 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:13,878 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Create TimescaleDB hypertables] ******
+2023-09-10 22:34:13,899 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:13,902 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Configure zabbix-server] **************************
+2023-09-10 22:34:16,444 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:16,447 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Create include dir zabbix-server] *****************
+2023-09-10 22:34:17,198 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:17,202 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Add zabbix-server scripts] ************************
+2023-09-10 22:34:17,221 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:17,225 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Zabbix-server started] ****************************
+2023-09-10 22:34:18,054 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,061 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Include OS-specific variables] ***********************
+2023-09-10 22:34:18,082 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,088 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Determine Latest Supported Zabbix Version] ***********
+2023-09-10 22:34:18,121 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,125 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set More Variables] **********************************
+2023-09-10 22:34:18,154 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,158 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Stopping Install of Invalid Version] *****************
+2023-09-10 22:34:18,166 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:18,170 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Determine PHP Version] *******************************
+2023-09-10 22:34:18,878 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,882 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set PHP Version] *************************************
+2023-09-10 22:34:18,895 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,898 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set PHP Variables] ***********************************
+2023-09-10 22:34:18,933 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,938 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Include OS Specific Tasks] ***************************
+2023-09-10 22:34:18,961 p=38583 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_web/tasks/Debian.yml for 192.168.11.30
+2023-09-10 22:34:18,965 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set PHP Dependencies] ***********************
+2023-09-10 22:34:18,982 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:18,986 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set some variables] *************************
+2023-09-10 22:34:19,023 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:19,027 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set some variables] *************************
+2023-09-10 22:34:19,038 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:19,044 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PHP Dependencies] *******************
+2023-09-10 22:34:21,673 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:21,677 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PgSQL Dependencies] *****************
+2023-09-10 22:34:24,328 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:24,331 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Create /etc/apt/keyrings/ on older versions] ***
+2023-09-10 22:34:24,975 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:24,979 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Download gpg key] ***************************
+2023-09-10 22:34:26,084 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:26,089 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Installing repository Debian] ***************
+2023-09-10 22:34:27,042 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=deb-src)
+2023-09-10 22:34:27,907 p=38583 u=belov n=ansible | ok: [192.168.11.30] => (item=deb)
+2023-09-10 22:34:27,911 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Create /etc/apt/preferences.d/] *************
+2023-09-10 22:34:27,934 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:27,940 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Configuring the weight for APT] *************
+2023-09-10 22:34:27,962 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:27,966 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | apt-get clean] ******************************
+2023-09-10 22:34:30,560 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:30,563 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install zabbix-web] *************************
+2023-09-10 22:34:33,297 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:33,301 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Link graphfont.ttf (workaround ZBX-10467)] ***
+2023-09-10 22:34:34,005 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:34,008 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Install the web server specific tasks] ***************
+2023-09-10 22:34:34,028 p=38583 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_web/tasks/apache.yml for 192.168.11.30
+2023-09-10 22:34:34,035 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Setting Web Server Facts] ****************************
+2023-09-10 22:34:34,065 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:34,069 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install zabbix-apache-conf] *****************
+2023-09-10 22:34:36,738 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:36,742 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : RedHat | Install zabbix-apache-conf] *****************
+2023-09-10 22:34:36,753 p=38583 u=belov n=ansible | skipping: [192.168.11.30]
+2023-09-10 22:34:36,757 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Get Apache version] *************************
+2023-09-10 22:34:37,450 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:37,454 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Set correct apache_version] *****************
+2023-09-10 22:34:37,467 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:37,471 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Install apache vhost] ***********************
+2023-09-10 22:34:38,781 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:38,785 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Enable Site (Debian Only)] ******************
+2023-09-10 22:34:39,463 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:39,467 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Create zabbix-web directory] *************************
+2023-09-10 22:34:40,182 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:40,186 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Configure zabbix-web] ********************************
+2023-09-10 22:34:41,468 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:41,472 p=38583 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PHP] ********************************
+2023-09-10 22:34:42,846 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:42,862 p=38583 u=belov n=ansible | PLAY [install zabbix-agent2] *************************************************************
+2023-09-10 22:34:42,865 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:34:44,421 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:44,909 p=38583 u=belov n=ansible | ok: [158.160.34.156]
+2023-09-10 22:34:44,981 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:34:44,982 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:34:45,247 p=38583 u=belov n=ansible | ok: [192.168.10.18]
+2023-09-10 22:34:46,379 p=38583 u=belov n=ansible | ok: [192.168.11.13]
+2023-09-10 22:34:46,411 p=38583 u=belov n=ansible | TASK [zabbix_agent2 : check if zabbix_repo is installed] *********************************
+2023-09-10 22:34:47,107 p=38583 u=belov n=ansible | changed: [158.160.34.156]
+2023-09-10 22:34:47,213 p=38583 u=belov n=ansible | changed: [192.168.10.18]
+2023-09-10 22:34:47,283 p=38583 u=belov n=ansible | changed: [vm-1]
+2023-09-10 22:34:47,318 p=38583 u=belov n=ansible | changed: [192.168.11.30]
+2023-09-10 22:34:47,321 p=38583 u=belov n=ansible | changed: [vm-2]
+2023-09-10 22:34:47,852 p=38583 u=belov n=ansible | changed: [192.168.11.13]
+2023-09-10 22:34:47,855 p=38583 u=belov n=ansible | TASK [zabbix_agent2 : wget zabbix_repo] **************************************************
+2023-09-10 22:34:49,626 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:49,647 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:34:49,678 p=38583 u=belov n=ansible | ok: [158.160.34.156]
+2023-09-10 22:34:49,749 p=38583 u=belov n=ansible | ok: [192.168.10.18]
+2023-09-10 22:34:49,848 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:34:51,240 p=38583 u=belov n=ansible | ok: [192.168.11.13]
+2023-09-10 22:34:51,243 p=38583 u=belov n=ansible | TASK [zabbix_agent2 : install zabbix_repo] ***********************************************
+2023-09-10 22:34:52,887 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:34:53,078 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:34:53,130 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:34:53,130 p=38583 u=belov n=ansible | ok: [192.168.10.18]
+2023-09-10 22:34:53,501 p=38583 u=belov n=ansible | ok: [158.160.34.156]
+2023-09-10 22:34:54,503 p=38583 u=belov n=ansible | ok: [192.168.11.13]
+2023-09-10 22:34:54,506 p=38583 u=belov n=ansible | TASK [zabbix_agent2 : install zabbix packages] *******************************************
+2023-09-10 22:34:57,615 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:34:57,789 p=38583 u=belov n=ansible | ok: [192.168.10.18]
+2023-09-10 22:34:57,904 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:34:58,371 p=38583 u=belov n=ansible | ok: [158.160.34.156]
+2023-09-10 22:35:00,911 p=38583 u=belov n=ansible | ok: [192.168.11.13]
+2023-09-10 22:35:27,004 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:27,007 p=38583 u=belov n=ansible | TASK [zabbix_agent2 : copy zabbix_agent2.conf] *******************************************
+2023-09-10 22:35:28,156 p=38583 u=belov n=ansible | ok: [158.160.34.156]
+2023-09-10 22:35:28,434 p=38583 u=belov n=ansible | ok: [vm-2]
+2023-09-10 22:35:28,468 p=38583 u=belov n=ansible | ok: [192.168.10.18]
+2023-09-10 22:35:28,503 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:28,607 p=38583 u=belov n=ansible | ok: [vm-1]
+2023-09-10 22:35:29,262 p=38583 u=belov n=ansible | ok: [192.168.11.13]
+2023-09-10 22:35:29,334 p=38583 u=belov n=ansible | PLAY [test vm-1] *************************************************************************
+2023-09-10 22:35:29,344 p=38583 u=belov n=ansible | TASK [Gathering Facts] *******************************************************************
+2023-09-10 22:35:30,606 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:30,614 p=38583 u=belov n=ansible | TASK [Set credentials to access Zabbix Server API] ***************************************
+2023-09-10 22:35:30,625 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:30,629 p=38583 u=belov n=ansible | TASK [add zabbix_server to zabbix] *******************************************************
+2023-09-10 22:35:30,948 p=38583 u=belov n=ansible | platform_type is set to community.zabbix.zabbix
+2023-09-10 22:35:31,777 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:31,780 p=38583 u=belov n=ansible | TASK [add vm-1 to zabbix] ****************************************************************
+2023-09-10 22:35:32,617 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:32,620 p=38583 u=belov n=ansible | TASK [add vm-2 to zabbix] ****************************************************************
+2023-09-10 22:35:33,422 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:33,426 p=38583 u=belov n=ansible | TASK [add elasticsearch to zabbix] *******************************************************
+2023-09-10 22:35:34,272 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:34,276 p=38583 u=belov n=ansible | TASK [add kibana to zabbix] **************************************************************
+2023-09-10 22:35:35,175 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:35,180 p=38583 u=belov n=ansible | TASK [add bastion to zabbix] *************************************************************
+2023-09-10 22:35:35,945 p=38583 u=belov n=ansible | ok: [192.168.11.30]
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | PLAY RECAP *******************************************************************************
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | 158.160.34.156             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | 192.168.10.18              : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | 192.168.11.13              : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | 192.168.11.30              : ok=113  changed=1    unreachable=0    failed=0    skipped=36   rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | vm-1                       : ok=20   changed=1    unreachable=0    failed=0    skipped=8    rescued=0    ignored=0   
+2023-09-10 22:35:35,996 p=38583 u=belov n=ansible | vm-2                       : ok=20   changed=1    unreachable=0    failed=0    skipped=8    rescued=0    ignored=0   
+2023-09-10 22:35:36,100 p=40390 u=belov n=ansible | shutdown complete
