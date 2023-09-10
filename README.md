@@ -20,15 +20,24 @@
 3. Логи - отсутствуют
 4. Сеть - настроены security groups, на веб-серверах и elasticsearch присутствуют только локальные ip, настроен ssh bastion
 5. Резервное копирование - отсутствует
+---
+### Подтверждение работы ресурса:  
+Вывод `terraform state pull` в файле [`./tf.state.txt`](/tf.state.txt)  
+Вывод лога ansible в файле [`./ansible.log`](/ansible.log)  
 
-Вывод `terraform state pull` в файле `./tf.state.txt`  
-Вывод лога ansible в файле `./ansible.log` [ansible.log](/blob/main/ansible.log) 
-Скриншоты:
+Скриншоты:  
+Подключение к веб-серверам через балансировщик:  
 
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-1.png)
+
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-2.jpg)
+
+Zabbix frontend:  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-3.png)
+
+Zabbix hosts:  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-4.png)  
+
 ---
 ### Возникли трудности с мониторингом http подключений  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-5.png)
