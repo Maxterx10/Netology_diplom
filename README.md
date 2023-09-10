@@ -22,7 +22,7 @@
 5. Резервное копирование - отсутствует
 
 Вывод `terraform state pull` в файле `./tf.state.txt`  
-Вывод лога ansible в файле `./ansible.log`  
+Вывод лога ansible в файле `./ansible.log` [ansible.log](/blob/main/ansible.log) 
 Скриншоты:
 
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-1.png)
