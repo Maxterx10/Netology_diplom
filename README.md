@@ -18,7 +18,7 @@
 1. Сайт - машины vm-1 и vm-2 с nginx и балансировщик L7 (доступ по `http://<ip>/80`)
 2. Монитроинг - zabbix-server с web-интерфейсом (доступ по `http://<ip>:80/`), zabbix-агенты на всех хостах, сбор метрик. Отсуствует дашборд
 3. Логи - отсутствуют
-4. Сеть - настроены security groups, на веб-серверах и elasticsearch отсутствуют внешние ip, настроен ssh bastion
+4. Сеть - настроены security groups, на веб-серверах и elasticsearch присутствуют только локальные ip, настроен ssh bastion
 5. Резервное копирование - отсутствует
 
 Вывод `terraform state pull` в файле `./tf.state.txt`  
@@ -26,13 +26,15 @@
 Скриншоты:
 
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-1.png)
-![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-2)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-2.jpg)
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-3.png)
-![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-4.png)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-4.png)  
+---
+### Возникли трудности с мониторингом http подключений  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-5.png)
 
 
-
+---
 На схеме ниже неверно указан сбор метрик zabbix-агентами: они стоят на всех хостах, а не только на веб-серверах.  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)
 
