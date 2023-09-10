@@ -25,6 +25,12 @@
 Вывод лога ansible в файле `./ansible.log`  
 Скриншоты:
 
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-1.png)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-2)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-3.png)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-4.png)
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/diplom-5.png)
+
 
 
 На схеме ниже неверно указан сбор метрик zabbix-агентами: они стоят на всех хостах, а не только на веб-серверах.  
