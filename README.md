@@ -18,8 +18,8 @@
 
 #### Terraform
 
-1. Oauth-токен теперь задаю через параметр `-var "yc_token="`
-2. Заполнил файл `.gitignore`
+1. Oauth-токен теперь задается через параметр `-var "yc_token="`
+2. Заполнен файл `.gitignore`
 3. Веб-сервера теперь создаются через цикл for_each, список имен веб-серверов задается в файле `./terraform/vm_list.tf`
 4. Target group теперь создается через блок dynamic
 5. В templates остался только inventory-файл
