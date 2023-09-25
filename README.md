@@ -7,11 +7,12 @@
 2. Установить Terraform >= v0.13, скопировать файл `.terraformrc` из репозитория в директорию пользователя `~/`
 3. Установить Ansible >= v5 c ansible-core >= v2.12
 4. Сгенерировать ssh-key, вставить публичный ключ в `./terraform/meta.txt`
-5. Сгенирировать OAuth-токен в yandex cloud, вставить его в `./terraform/token.tf`
+5. Сгенирировать OAuth-токен в yandex cloud, вставить его в `./terraform/token.tf` или при выполнении п.7 добавить флаг `-var "yc_token=<mytoken>"`
 6. Вставить `cloud_id` и `folder_id` из yandex cloud в `./terraform/main.tf`
 7. Находясь в директории `./terraform/` запустить `terraform apply`, дождаться завершения развертывания чистой инфраструктуры
-8. Находясь в директории `./ansible/` запустить `ansible-playbook master_playbook.yml`
-9. Инфраструктура развернута!
+8. Находясь в директории `./ansible/` запустить `ansible-playbook ansible_playbook.yml` для загрузки всех необходимых ролей и коллекций
+9. Находясь в директории `./ansible/` запустить `ansible-playbook master_playbook.yml --vault-password-file <файл содержащий пароль "1111">`
+10. Инфраструктура развернута!
 
 ---
 ### Исправления:  
@@ -31,6 +32,12 @@
 3. (Плейбуки на бастион никогда не копировались. ProxyCommand для бастиона использовался изначально)
 4. Теперь Zabbix-хосты добавляются через ansible loop
 5. Файлы переменных, содержащие пароли, теперь зашифрованы через ansible-vault
+
+#### ELK
+
+1. Filebeat на web-серверах, а также elasticsearch и kibana на собственных хостах поднимаются в докер-контейнерах
+2. В filebeat включен только модуль nginx, собирающий access_log и error_log
+3. Стандартный дашборд kibana для nginx включется через web GUI
 
 ---
 ### Детали:
