@@ -1,5 +1,0 @@
----
-- import_playbook: ansible_playbook.yml
-- import_playbook: nginx_playbook.yml
-- import_playbook: zabbix_server_playbook.yml
-- import_playbook: zabbix_hosts_playbook.yml
