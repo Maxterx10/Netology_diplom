@@ -1,0 +1,21 @@
+filebeat.modules:
+- module: nginx
+  access:
+    var.paths: ["/var/log/nginx/access.log"]
+  error:
+    var.paths: ["/var/log/nginx/error.log"]
+- module: system
+  syslog:
+    enabled: true
+    var.paths: ["/var/log/syslog*"]
+  auth:
+    enabled: true
+    var.paths: ["/var/log/auth.log*"]
+
+setup.dashboards.enabled: true
+
+output.elasticsearch:
+  hosts: ["http://{{ hostvars[ 'elastic_server' ].ansible_host }}:9200"]
+
+setup.kibana:
+  host: "http://{{ hostvars[ 'kibana_server' ].ansible_host }}:5601"
