@@ -1,0 +1,29 @@
+[web-servers]
+${vm}
+
+[zabbix]
+zabbix_server ansible_host=${zabbix} 
+
+[elastic]
+elastic_server ansible_host=${elastic} 
+
+[kibana]
+kibana_server ansible_host=${kibana} 
+
+[bastion]
+bastion_host ansible_host=${bastion_nat}
+
+[nodes:children]
+web-servers
+zabbix
+elastic
+kibana
+
+[nodes:vars]
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q user@${bastion_nat}"'
+
+[all:vars]
+ansible_connection=ssh
+ansible_user=user
+zabbix_ext_ip=${zabbix_nat}
+alb_ip=${alb}

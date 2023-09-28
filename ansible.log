@@ -1,0 +1,1107 @@
+2023-09-27 20:28:06,459 p=21388 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 20:28:06,518 p=21388 u=belov n=ansible | ERROR! Attempting to decrypt but no vault secrets found
+2023-09-27 20:28:18,743 p=21402 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 20:28:19,136 p=21402 u=belov n=ansible | PLAY [install nginx] **********************************************************************************************************************************************************************************************
+2023-09-27 20:28:19,142 p=21402 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:28:24,571 p=21402 u=belov n=ansible |  [ERROR]: User interrupted execution
+
+2023-09-27 20:28:25,621 p=21425 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 20:28:26,015 p=21425 u=belov n=ansible | PLAY [install nginx] **********************************************************************************************************************************************************************************************
+2023-09-27 20:28:26,022 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:28:28,227 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:28:28,616 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:28:28,634 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Include OS-specific variables.] *********************************************************************************************************************************************************
+2023-09-27 20:28:28,647 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:28:28,654 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:28:28,658 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Define nginx_user.] *********************************************************************************************************************************************************************
+2023-09-27 20:28:28,681 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:28:28,688 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:28:28,691 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:28:28,702 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:28:28,707 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:28:28,710 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:28:28,725 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:28:28,730 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:28:28,733 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:28:28,760 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.nginx/tasks/setup-Debian.yml for vm-1, vm-2
+2023-09-27 20:28:28,766 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Update apt cache.] **********************************************************************************************************************************************************************
+2023-09-27 20:28:44,956 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:28:45,804 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:28:45,808 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx is installed.] *************************************************************************************************************************************************************
+2023-09-27 20:29:00,525 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:00,636 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:00,639 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:29:00,649 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:00,654 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:00,657 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:29:00,679 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:00,680 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:00,684 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : include_tasks] **************************************************************************************************************************************************************************
+2023-09-27 20:29:00,694 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:00,701 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:00,704 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Remove default nginx vhost config file (if configured).] ********************************************************************************************************************************
+2023-09-27 20:29:00,722 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:00,729 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:00,733 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx_vhost_path exists.] ********************************************************************************************************************************************************
+2023-09-27 20:29:01,684 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:29:01,700 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:29:01,707 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Add managed vhost config files.] ********************************************************************************************************************************************************
+2023-09-27 20:29:01,722 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:01,727 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:01,731 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Remove managed vhost config files.] *****************************************************************************************************************************************************
+2023-09-27 20:29:01,741 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:29:01,746 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:29:01,749 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Remove legacy vhosts.conf file.] ********************************************************************************************************************************************************
+2023-09-27 20:29:02,700 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:29:02,741 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:29:02,744 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Copy nginx configuration in place.] *****************************************************************************************************************************************************
+2023-09-27 20:29:04,964 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:04,997 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:05,000 p=21425 u=belov n=ansible | TASK [geerlingguy.nginx : Ensure nginx service is running as configured.] *****************************************************************************************************************************************
+2023-09-27 20:29:06,335 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:29:06,384 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:29:06,401 p=21425 u=belov n=ansible | RUNNING HANDLER [geerlingguy.nginx : reload nginx] ****************************************************************************************************************************************************************
+2023-09-27 20:29:07,416 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:07,494 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:07,505 p=21425 u=belov n=ansible | PLAY [setting up nginx] *******************************************************************************************************************************************************************************************
+2023-09-27 20:29:07,509 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:29:09,171 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:29:09,287 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:29:09,309 p=21425 u=belov n=ansible | TASK [copy index] *************************************************************************************************************************************************************************************************
+2023-09-27 20:29:11,021 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:11,190 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:11,193 p=21425 u=belov n=ansible | TASK [copy web.conf] **********************************************************************************************************************************************************************************************
+2023-09-27 20:29:12,816 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:12,818 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:12,821 p=21425 u=belov n=ansible | TASK [copy stub_status.conf] **************************************************************************************************************************************************************************************
+2023-09-27 20:29:14,284 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:14,320 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:14,323 p=21425 u=belov n=ansible | TASK [copy nginx.conf] ********************************************************************************************************************************************************************************************
+2023-09-27 20:29:16,060 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:16,061 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:16,063 p=21425 u=belov n=ansible | TASK [start nginx] ************************************************************************************************************************************************************************************************
+2023-09-27 20:29:17,046 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:29:17,059 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:29:17,076 p=21425 u=belov n=ansible | RUNNING HANDLER [restart nginx] ***********************************************************************************************************************************************************************************
+2023-09-27 20:29:18,328 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:29:18,346 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:29:18,358 p=21425 u=belov n=ansible | PLAY [install postgresql] *****************************************************************************************************************************************************************************************
+2023-09-27 20:29:18,361 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:29:21,807 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:29:21,814 p=21425 u=belov n=ansible | TASK [psql : install postgresql libpq pip] ************************************************************************************************************************************************************************
+2023-09-27 20:30:56,774 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:30:56,777 p=21425 u=belov n=ansible | TASK [psql : install psycopg2] ************************************************************************************************************************************************************************************
+2023-09-27 20:31:00,808 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:31:00,811 p=21425 u=belov n=ansible | TASK [psql : start postgresql] ************************************************************************************************************************************************************************************
+2023-09-27 20:31:02,237 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:02,296 p=21425 u=belov n=ansible | PLAY [install zabbix-server] **************************************************************************************************************************************************************************************
+2023-09-27 20:31:02,319 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:31:03,746 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:03,799 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Include OS-specific variables.] ********************************************************************************************************************************************************
+2023-09-27 20:31:03,812 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:03,832 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Include variables for Amazon Linux.] ***************************************************************************************************************************************************
+2023-09-27 20:31:03,843 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:03,863 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Define apache_packages.] ***************************************************************************************************************************************************************
+2023-09-27 20:31:03,899 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:03,921 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : include_tasks] *************************************************************************************************************************************************************************
+2023-09-27 20:31:03,953 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.apache/tasks/setup-Debian.yml for zabbix_server
+2023-09-27 20:31:03,982 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Update apt cache.] *********************************************************************************************************************************************************************
+2023-09-27 20:31:05,364 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:05,381 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Ensure Apache is installed on Debian.] *************************************************************************************************************************************************
+2023-09-27 20:31:19,980 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:31:20,002 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Get installed version of Apache.] ******************************************************************************************************************************************************
+2023-09-27 20:31:21,201 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:21,224 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Create apache_version variable.] *******************************************************************************************************************************************************
+2023-09-27 20:31:21,241 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:21,257 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Include Apache 2.2 variables.] *********************************************************************************************************************************************************
+2023-09-27 20:31:21,272 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:21,289 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Include Apache 2.4 variables.] *********************************************************************************************************************************************************
+2023-09-27 20:31:21,307 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:21,323 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Configure Apache.] *********************************************************************************************************************************************************************
+2023-09-27 20:31:21,356 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.apache/tasks/configure-Debian.yml for zabbix_server
+2023-09-27 20:31:21,390 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Configure Apache.] *********************************************************************************************************************************************************************
+2023-09-27 20:31:22,271 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item={'regexp': '^Listen ', 'line': 'Listen 80'})
+2023-09-27 20:31:22,290 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Enable Apache mods.] *******************************************************************************************************************************************************************
+2023-09-27 20:31:23,154 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=rewrite)
+2023-09-27 20:31:24,298 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=ssl)
+2023-09-27 20:31:24,315 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Disable Apache mods.] ******************************************************************************************************************************************************************
+2023-09-27 20:31:24,325 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:24,350 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Check whether certificates defined in vhosts exist.] ***********************************************************************************************************************************
+2023-09-27 20:31:24,360 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:24,376 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Add apache vhosts configuration.] ******************************************************************************************************************************************************
+2023-09-27 20:31:26,061 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:31:26,092 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Add vhost symlink in sites-enabled.] ***************************************************************************************************************************************************
+2023-09-27 20:31:26,900 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:31:26,917 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Remove default vhost in sites-enabled.] ************************************************************************************************************************************************
+2023-09-27 20:31:26,931 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:26,951 p=21425 u=belov n=ansible | TASK [geerlingguy.apache : Ensure Apache has selected state and enabled on boot.] *********************************************************************************************************************************
+2023-09-27 20:31:28,066 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,102 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Include OS-specific variables.] ***********************************************************************************************************************************************************
+2023-09-27 20:31:28,114 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,131 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Include distribution and version-specific vars.] ******************************************************************************************************************************************
+2023-09-27 20:31:28,150 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/home/belov/.ansible/roles/geerlingguy.php/vars/Debian-11.yml)
+2023-09-27 20:31:28,170 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Set the default PHP version for Debian-based OSes.] ***************************************************************************************************************************************
+2023-09-27 20:31:28,197 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,216 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define the name of the JSON extension package on Debian for PHP <8.] **********************************************************************************************************************
+2023-09-27 20:31:28,235 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,251 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Add the JSON extension on Debian for PHP <8.] *********************************************************************************************************************************************
+2023-09-27 20:31:28,278 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,295 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_packages.] *********************************************************************************************************************************************************************
+2023-09-27 20:31:28,330 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,347 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_webserver_daemon.] *************************************************************************************************************************************************************
+2023-09-27 20:31:28,369 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,389 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_conf_paths.] *******************************************************************************************************************************************************************
+2023-09-27 20:31:28,410 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,430 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_extension_conf_paths.] *********************************************************************************************************************************************************
+2023-09-27 20:31:28,456 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,472 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_apc_conf_filename.] ************************************************************************************************************************************************************
+2023-09-27 20:31:28,496 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,515 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_opcache_conf_filename (Ubuntu 16.04).] *****************************************************************************************************************************************
+2023-09-27 20:31:28,538 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:28,558 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_opcache_conf_filename.] ********************************************************************************************************************************************************
+2023-09-27 20:31:28,582 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,601 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_conf_path.] ****************************************************************************************************************************************************************
+2023-09-27 20:31:28,626 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:28,648 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:31:28,658 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:31:28,678 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:31:28,711 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/setup-Debian.yml for zabbix_server
+2023-09-27 20:31:28,749 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Update apt cache.] ************************************************************************************************************************************************************************
+2023-09-27 20:31:30,184 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:31:30,208 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure PHP packages are installed.] *******************************************************************************************************************************************************
+2023-09-27 20:33:30,946 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:33:30,964 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Delete APCu configuration file if this role will provide one.] ****************************************************************************************************************************
+2023-09-27 20:33:32,428 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:33:33,501 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:33:34,539 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:33:34,565 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Delete OpCache configuration file if this role will provide one.] *************************************************************************************************************************
+2023-09-27 20:33:35,449 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:33:36,610 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:33:37,843 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:33:37,865 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:33:37,881 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:33:37,897 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:33:37,926 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure.yml for zabbix_server
+2023-09-27 20:33:37,957 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure configuration directories exist.] **************************************************************************************************************************************************
+2023-09-27 20:33:39,110 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/fpm)
+2023-09-27 20:33:40,196 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/apache2)
+2023-09-27 20:33:41,325 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/cli)
+2023-09-27 20:33:42,369 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:33:43,477 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:33:44,679 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:33:44,701 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Place PHP configuration file in place.] ***************************************************************************************************************************************************
+2023-09-27 20:33:47,171 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/fpm)
+2023-09-27 20:33:49,599 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/apache2)
+2023-09-27 20:33:51,691 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/cli)
+2023-09-27 20:33:51,712 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:33:51,742 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-apcu.yml for zabbix_server
+2023-09-27 20:33:51,775 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Check for existing APCu config files.] ****************************************************************************************************************************************************
+2023-09-27 20:33:52,954 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:33:54,679 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:33:55,766 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:33:55,783 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Remove any non-role-supplied APCu config files.] ******************************************************************************************************************************************
+2023-09-27 20:33:55,795 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:33:55,819 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure APCu config file is present.] ******************************************************************************************************************************************************
+2023-09-27 20:33:57,963 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:33:59,790 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:34:01,815 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:34:01,838 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Remove APCu config file if APC is disabled.] **********************************************************************************************************************************************
+2023-09-27 20:34:01,854 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-27 20:34:01,856 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-27 20:34:01,857 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-27 20:34:01,859 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:01,878 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:34:01,907 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-opcache.yml for zabbix_server
+2023-09-27 20:34:01,959 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Check for existing OpCache config files.] *************************************************************************************************************************************************
+2023-09-27 20:34:03,182 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:34:04,040 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:34:04,892 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:34:04,910 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Remove any non-role-supplied OpCache config files.] ***************************************************************************************************************************************
+2023-09-27 20:34:04,931 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:04,948 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure OpCache config file is present.] ***************************************************************************************************************************************************
+2023-09-27 20:34:06,622 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d)
+2023-09-27 20:34:08,684 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d)
+2023-09-27 20:34:10,340 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d)
+2023-09-27 20:34:10,361 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Remove OpCache config file if OpCache is disabled.] ***************************************************************************************************************************************
+2023-09-27 20:34:10,391 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/fpm/conf.d) 
+2023-09-27 20:34:10,394 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/apache2/conf.d) 
+2023-09-27 20:34:10,394 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item=/etc/php/7.4/cli/conf.d) 
+2023-09-27 20:34:10,395 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:10,415 p=21425 u=belov n=ansible | TASK [geerlingguy.php : include_tasks] ****************************************************************************************************************************************************************************
+2023-09-27 20:34:10,443 p=21425 u=belov n=ansible | included: /home/belov/.ansible/roles/geerlingguy.php/tasks/configure-fpm.yml for zabbix_server
+2023-09-27 20:34:10,479 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_daemon.] *******************************************************************************************************************************************************************
+2023-09-27 20:34:10,505 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:10,522 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_conf_path.] ***********************************************************************************************************************************************************
+2023-09-27 20:34:10,548 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:10,566 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_user.] ****************************************************************************************************************************************************************
+2023-09-27 20:34:10,588 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:10,606 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Define php_fpm_pool_group.] ***************************************************************************************************************************************************************
+2023-09-27 20:34:10,630 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:10,648 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Stat php_fpm_pool_conf_path] **************************************************************************************************************************************************************
+2023-09-27 20:34:11,587 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:11,604 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure the default pool directory exists.] ************************************************************************************************************************************************
+2023-09-27 20:34:11,624 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:11,641 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Create fpm pools.] ************************************************************************************************************************************************************************
+2023-09-27 20:34:11,668 p=21425 u=belov n=ansible | skipping: [zabbix_server] => (item={'pool_name': 'www', 'pool_template': 'www.conf.j2', 'pool_listen': '127.0.0.1:9000', 'pool_listen_allowed_clients': '127.0.0.1', 'pool_pm': 'dynamic', 'pool_pm_max_children': 50, 'pool_pm_start_servers': 5, 'pool_pm_min_spare_servers': 5, 'pool_pm_max_spare_servers': 5, 'pool_pm_max_requests': 0, 'pool_pm_status_path': ''}) 
+2023-09-27 20:34:11,669 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:11,688 p=21425 u=belov n=ansible | TASK [geerlingguy.php : Ensure php-fpm is started and enabled at boot (if configured).] ***************************************************************************************************************************
+2023-09-27 20:34:11,702 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:11,738 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Include OS-specific variables] *********************************************************************************************************************************************
+2023-09-27 20:34:11,759 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:11,776 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Determine Latest Supported Zabbix Version] *********************************************************************************************************************************
+2023-09-27 20:34:11,815 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:11,832 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Set More Variables] ********************************************************************************************************************************************************
+2023-09-27 20:34:11,861 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:11,879 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Stopping Install of Invalid Version] ***************************************************************************************************************************************
+2023-09-27 20:34:11,890 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:11,907 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Install the correct repository] ********************************************************************************************************************************************
+2023-09-27 20:34:11,948 p=21425 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_server/tasks/Debian.yml for zabbix_server
+2023-09-27 20:34:11,997 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some variables] ***********************************************************************************************************************************************
+2023-09-27 20:34:12,030 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:12,048 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some variables] ***********************************************************************************************************************************************
+2023-09-27 20:34:12,065 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:12,089 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Set some facts for Zabbix] ****************************************************************************************************************************************
+2023-09-27 20:34:12,103 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:12,123 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing gnupg] *************************************************************************************************************************************************
+2023-09-27 20:34:13,727 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:13,746 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Create /etc/apt/keyrings/ on older versions] **********************************************************************************************************************
+2023-09-27 20:34:14,687 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:14,704 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Download gpg key] *************************************************************************************************************************************************
+2023-09-27 20:34:16,137 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:16,160 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing repository Debian] *************************************************************************************************************************************
+2023-09-27 20:34:19,690 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=deb-src)
+2023-09-27 20:34:23,043 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=deb)
+2023-09-27 20:34:23,061 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Create /etc/apt/preferences.d/] ***********************************************************************************************************************************
+2023-09-27 20:34:23,091 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:23,107 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Configuring the weight for APT] ***********************************************************************************************************************************
+2023-09-27 20:34:23,132 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:23,149 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | apt-get clean] ****************************************************************************************************************************************************
+2023-09-27 20:34:25,909 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:25,930 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Check for the dpkg exclude line] **********************************************************************************************************************************
+2023-09-27 20:34:26,971 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:26,994 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Allow Zabbix dpkg installs to /usr/share/doc/zabbix*] *************************************************************************************************************
+2023-09-27 20:34:27,022 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:27,044 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing zabbix-server-pgsql] ***********************************************************************************************************************************
+2023-09-27 20:34:40,732 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:40,749 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Installing zabbix-sql-scripts] ************************************************************************************************************************************
+2023-09-27 20:34:48,121 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:48,141 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Install Mysql Client package] *************************************************************************************************************************************
+2023-09-27 20:34:48,152 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:48,173 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian 10 | Install Mysql Client package] **********************************************************************************************************************************
+2023-09-27 20:34:48,187 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:48,204 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Debian | Install PostgreSQL Client package] ********************************************************************************************************************************
+2023-09-27 20:34:51,836 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:51,854 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Installing the postgresql database] ****************************************************************************************************************************************
+2023-09-27 20:34:51,907 p=21425 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_server/tasks/postgresql.yml for zabbix_server
+2023-09-27 20:34:51,983 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Set the correct delegated_dbhost (to support postgres db deployment on a remote dbhost)] **********************************************************************
+2023-09-27 20:34:51,997 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:34:52,022 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Set the correct delegated_dbhost (to support postgres db deployment on a remote dbhost)] **********************************************************************
+2023-09-27 20:34:52,031 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:52,048 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create database] **********************************************************************************************************************************
+2023-09-27 20:34:53,009 p=21425 u=belov n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.15/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-unprivileged-user#risks-of-becoming-an-unprivileged-user
+
+2023-09-27 20:34:53,931 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:53,962 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create database user] *****************************************************************************************************************************
+2023-09-27 20:34:54,966 p=21425 u=belov n=ansible | [WARNING]: Using world-readable permissions for temporary files Ansible needs to create when becoming an unprivileged user. This may be insecure. For information on securing this, see
+https://docs.ansible.com/ansible-core/2.15/playbook_guide/playbooks_privilege_escalation.html#risks-of-becoming-an-unprivileged-user#risks-of-becoming-an-unprivileged-user
+
+2023-09-27 20:34:55,584 p=21425 u=belov n=ansible | [DEPRECATION WARNING]: Param 'priv' is deprecated. See the module docs for more information. This feature will be removed from community.postgreql in version 3.0.0. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-09-27 20:34:55,585 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:34:55,607 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Delegated | Create timescaledb extension] *********************************************************************************************************************
+2023-09-27 20:34:55,644 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:55,660 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create database] *************************************************************************************************************************************
+2023-09-27 20:34:55,679 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:55,696 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create database user] ********************************************************************************************************************************
+2023-09-27 20:34:55,713 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:55,730 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Remote | Create timescaledb extension] ************************************************************************************************************************
+2023-09-27 20:34:55,747 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:34:55,764 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Create schema] ************************************************************************************************************************************************
+2023-09-27 20:35:55,445 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:35:55,470 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : PostgreSQL | Create TimescaleDB hypertables] *******************************************************************************************************************************
+2023-09-27 20:35:55,484 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:35:55,508 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Configure zabbix-server] ***************************************************************************************************************************************************
+2023-09-27 20:35:58,732 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:35:58,753 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Create include dir zabbix-server] ******************************************************************************************************************************************
+2023-09-27 20:35:59,526 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:35:59,547 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Add zabbix-server scripts] *************************************************************************************************************************************************
+2023-09-27 20:35:59,570 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:35:59,588 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_server : Zabbix-server started] *****************************************************************************************************************************************************
+2023-09-27 20:36:01,469 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:01,508 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Include OS-specific variables] ************************************************************************************************************************************************
+2023-09-27 20:36:01,523 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:01,540 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Determine Latest Supported Zabbix Version] ************************************************************************************************************************************
+2023-09-27 20:36:01,574 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:01,595 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set More Variables] ***********************************************************************************************************************************************************
+2023-09-27 20:36:01,626 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:01,646 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Stopping Install of Invalid Version] ******************************************************************************************************************************************
+2023-09-27 20:36:01,661 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:01,687 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Determine PHP Version] ********************************************************************************************************************************************************
+2023-09-27 20:36:02,903 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:02,921 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set PHP Version] **************************************************************************************************************************************************************
+2023-09-27 20:36:02,939 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:02,980 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Set PHP Variables] ************************************************************************************************************************************************************
+2023-09-27 20:36:03,016 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:03,036 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Include OS Specific Tasks] ****************************************************************************************************************************************************
+2023-09-27 20:36:03,076 p=21425 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_web/tasks/Debian.yml for zabbix_server
+2023-09-27 20:36:03,113 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set PHP Dependencies] ************************************************************************************************************************************************
+2023-09-27 20:36:03,130 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:03,148 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set some variables] **************************************************************************************************************************************************
+2023-09-27 20:36:03,182 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:03,202 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Set some variables] **************************************************************************************************************************************************
+2023-09-27 20:36:03,211 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:03,229 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PHP Dependencies] ********************************************************************************************************************************************
+2023-09-27 20:36:10,867 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:10,884 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PgSQL Dependencies] ******************************************************************************************************************************************
+2023-09-27 20:36:16,787 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:16,804 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Create /etc/apt/keyrings/ on older versions] *************************************************************************************************************************
+2023-09-27 20:36:17,883 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:17,899 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Download gpg key] ****************************************************************************************************************************************************
+2023-09-27 20:36:19,194 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:19,212 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Installing repository Debian] ****************************************************************************************************************************************
+2023-09-27 20:36:20,472 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=deb-src)
+2023-09-27 20:36:21,714 p=21425 u=belov n=ansible | ok: [zabbix_server] => (item=deb)
+2023-09-27 20:36:21,737 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Create /etc/apt/preferences.d/] **************************************************************************************************************************************
+2023-09-27 20:36:21,757 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:21,779 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Configuring the weight for APT] **************************************************************************************************************************************
+2023-09-27 20:36:21,803 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:21,820 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | apt-get clean] *******************************************************************************************************************************************************
+2023-09-27 20:36:24,207 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:24,224 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install zabbix-web] **************************************************************************************************************************************************
+2023-09-27 20:36:37,364 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:37,384 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Link graphfont.ttf (workaround ZBX-10467)] ***************************************************************************************************************************
+2023-09-27 20:36:38,321 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:38,340 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Install the web server specific tasks] ****************************************************************************************************************************************
+2023-09-27 20:36:38,378 p=21425 u=belov n=ansible | included: /home/belov/.local/lib/python3.9/site-packages/ansible_collections/community/zabbix/roles/zabbix_web/tasks/apache.yml for zabbix_server
+2023-09-27 20:36:38,439 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Setting Web Server Facts] *****************************************************************************************************************************************************
+2023-09-27 20:36:38,470 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:38,487 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install zabbix-apache-conf] ******************************************************************************************************************************************
+2023-09-27 20:36:44,163 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:44,180 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : RedHat | Install zabbix-apache-conf] ******************************************************************************************************************************************
+2023-09-27 20:36:44,194 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:44,217 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Get Apache version] **************************************************************************************************************************************************
+2023-09-27 20:36:45,166 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:45,188 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Set correct apache_version] ******************************************************************************************************************************************
+2023-09-27 20:36:45,214 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:36:45,236 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Install apache vhost] ************************************************************************************************************************************************
+2023-09-27 20:36:47,276 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:47,294 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Apache | Enable Site (Debian Only)] *******************************************************************************************************************************************
+2023-09-27 20:36:48,356 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:48,381 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Create zabbix-web directory] **************************************************************************************************************************************************
+2023-09-27 20:36:49,251 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:49,281 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Configure zabbix-web] *********************************************************************************************************************************************************
+2023-09-27 20:36:51,803 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:51,820 p=21425 u=belov n=ansible | TASK [community.zabbix.zabbix_web : Debian | Install PHP] *********************************************************************************************************************************************************
+2023-09-27 20:36:54,000 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:54,068 p=21425 u=belov n=ansible | RUNNING HANDLER [geerlingguy.php : restart webserver] *************************************************************************************************************************************************************
+2023-09-27 20:36:55,513 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:55,531 p=21425 u=belov n=ansible | RUNNING HANDLER [geerlingguy.php : restart php-fpm] ***************************************************************************************************************************************************************
+2023-09-27 20:36:55,547 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:36:55,564 p=21425 u=belov n=ansible | RUNNING HANDLER [community.zabbix.zabbix_server : zabbix-server restarted] ****************************************************************************************************************************************
+2023-09-27 20:36:58,949 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:36:58,965 p=21425 u=belov n=ansible | RUNNING HANDLER [community.zabbix.zabbix_web : restart apache] ****************************************************************************************************************************************************
+2023-09-27 20:37:00,268 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:37:00,293 p=21425 u=belov n=ansible | RUNNING HANDLER [community.zabbix.zabbix_web : restart php-fpm-version] *******************************************************************************************************************************************
+2023-09-27 20:37:01,968 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:37:02,003 p=21425 u=belov n=ansible | PLAY [install zabbix-agent2] **************************************************************************************************************************************************************************************
+2023-09-27 20:37:02,006 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:37:05,204 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:37:06,495 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:37:06,497 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:37:07,516 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:37:09,149 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:37:12,018 p=21425 u=belov n=ansible | ok: [bastion_host]
+2023-09-27 20:37:12,054 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : check if zabbix 6.4 apt source list is present] *********************************************************************************************************************************************
+2023-09-27 20:37:14,107 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:37:14,108 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:37:14,161 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:37:14,276 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:37:14,985 p=21425 u=belov n=ansible | ok: [bastion_host]
+2023-09-27 20:37:15,499 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:37:15,502 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : remove excessive zabbix 6.4 apt source list] ************************************************************************************************************************************************
+2023-09-27 20:37:15,512 p=21425 u=belov n=ansible | skipping: [bastion_host]
+2023-09-27 20:37:15,521 p=21425 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 20:37:15,546 p=21425 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 20:37:15,555 p=21425 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 20:37:15,563 p=21425 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 20:37:16,983 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:37:16,986 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : check if zabbix-release is installed] *******************************************************************************************************************************************************
+2023-09-27 20:37:19,209 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:37:19,418 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:37:19,420 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:37:19,481 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:37:20,737 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:37:20,752 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:37:20,760 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : wget zabbix_repo] ***************************************************************************************************************************************************************************
+2023-09-27 20:37:20,814 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:37:24,150 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:37:24,228 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:37:24,417 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:37:24,516 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:37:26,719 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:37:26,722 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : install zabbix_repo] ************************************************************************************************************************************************************************
+2023-09-27 20:37:26,771 p=21425 u=belov n=ansible | skipping: [zabbix_server]
+2023-09-27 20:37:29,854 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:37:30,209 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:37:30,317 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:37:30,369 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:37:37,020 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:37:37,028 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : install zabbix packages] ********************************************************************************************************************************************************************
+2023-09-27 20:37:47,846 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:37:50,830 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:37:51,238 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:37:54,411 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:38:14,123 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:39:49,437 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:39:49,440 p=21425 u=belov n=ansible | TASK [zabbix_agent2 : copy zabbix_agent2.conf] ********************************************************************************************************************************************************************
+2023-09-27 20:39:55,706 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:39:56,162 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:39:56,197 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:39:56,567 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:39:59,214 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:39:59,281 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:39:59,329 p=21425 u=belov n=ansible | RUNNING HANDLER [zabbix_agent2 : restart zabbix-agent2] ***********************************************************************************************************************************************************
+2023-09-27 20:40:01,945 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:40:01,946 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:40:01,966 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:40:02,027 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:40:04,373 p=21425 u=belov n=ansible | changed: [bastion_host]
+2023-09-27 20:40:04,570 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:40:04,603 p=21425 u=belov n=ansible | PLAY [connect zabbix-agent2 to zabbix-server] *********************************************************************************************************************************************************************
+2023-09-27 20:40:04,607 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:40:06,002 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:40:06,009 p=21425 u=belov n=ansible | TASK [include_vars] ***********************************************************************************************************************************************************************************************
+2023-09-27 20:40:06,034 p=21425 u=belov n=ansible | ok: [zabbix_server]
+2023-09-27 20:40:06,041 p=21425 u=belov n=ansible | TASK [add zabbix_server to zabbix] ********************************************************************************************************************************************************************************
+2023-09-27 20:40:06,355 p=21425 u=belov n=ansible | platform_type is set to community.zabbix.zabbix
+2023-09-27 20:40:07,839 p=21425 u=belov n=ansible | changed: [zabbix_server]
+2023-09-27 20:40:07,842 p=21425 u=belov n=ansible | TASK [add vm to zabbix] *******************************************************************************************************************************************************************************************
+2023-09-27 20:40:09,412 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=vm-1)
+2023-09-27 20:40:10,720 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=vm-2)
+2023-09-27 20:40:10,724 p=21425 u=belov n=ansible | TASK [add elastic, kibana, bastion to zabbix] *********************************************************************************************************************************************************************
+2023-09-27 20:40:11,880 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=bastion_host)
+2023-09-27 20:40:12,952 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=elastic_server)
+2023-09-27 20:40:14,128 p=21425 u=belov n=ansible | changed: [zabbix_server] => (item=kibana_server)
+2023-09-27 20:40:14,199 p=21425 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 20:40:14,203 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:40:14,298 p=23357 u=belov n=ansible | shutdown complete
+2023-09-27 20:40:16,375 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:16,646 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:16,678 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:16,705 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:16,730 p=21425 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 20:40:18,519 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:18,701 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:18,787 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:18,885 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:18,888 p=21425 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 20:40:20,320 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:20,739 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:20,756 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:20,757 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:20,761 p=21425 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 20:40:22,179 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:22,497 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:22,566 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:22,613 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:22,616 p=21425 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 20:40:25,207 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:25,776 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:25,794 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:25,859 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:25,862 p=21425 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 20:40:32,371 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:40:35,377 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:40:36,019 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:40:37,440 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:40:37,443 p=21425 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 20:40:40,342 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:40:40,368 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:40:40,368 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:40:40,387 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:40:40,390 p=21425 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 20:40:48,388 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:40:50,274 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:40:51,672 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:40:53,488 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:40:53,491 p=21425 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 20:40:57,091 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:40:58,182 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:40:58,233 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:40:58,281 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:40:58,284 p=21425 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 20:41:01,171 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:41:01,772 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:41:02,105 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:41:02,231 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:41:02,234 p=21425 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 20:41:06,274 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:41:07,113 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:41:07,211 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:41:07,353 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:41:07,356 p=21425 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 20:41:29,844 p=21425 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 20:41:38,480 p=21425 u=belov n=ansible | changed: [vm-1]
+2023-09-27 20:41:38,581 p=21425 u=belov n=ansible | changed: [vm-2]
+2023-09-27 20:41:38,583 p=21425 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 20:41:38,586 p=21425 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 20:41:40,176 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:41:40,315 p=21425 u=belov n=ansible | ok: [vm-1]
+2023-09-27 20:41:40,376 p=21425 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 20:41:40,426 p=21425 u=belov n=ansible | ok: [vm-2]
+2023-09-27 20:41:40,479 p=21425 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 20:41:40,483 p=21425 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 20:41:41,803 p=21425 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 20:41:41,813 p=21425 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 21:23:29,958 p=21425 u=belov n=ansible |  [ERROR]: User interrupted execution
+
+2023-09-27 21:23:43,575 p=24237 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 21:23:43,637 p=24237 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 21:23:43,644 p=24237 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 21:23:47,241 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:47,563 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:47,709 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:47,799 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:47,827 p=24237 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 21:23:49,268 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:49,407 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:49,451 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:49,558 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:49,562 p=24237 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 21:23:50,788 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:51,131 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:51,158 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:51,185 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:51,188 p=24237 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 21:23:53,537 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:53,877 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:53,890 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:53,946 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:53,949 p=24237 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 21:23:55,430 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:55,851 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:55,907 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:56,030 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:56,033 p=24237 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 21:23:57,281 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:57,571 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:57,597 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:57,681 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:57,684 p=24237 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 21:23:58,810 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:23:59,153 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:23:59,291 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:23:59,395 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:23:59,399 p=24237 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 21:24:00,829 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:01,258 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:24:01,264 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:01,416 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:24:01,419 p=24237 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 21:24:03,458 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:03,807 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:24:03,827 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:24:03,860 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:03,863 p=24237 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 21:24:05,071 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:05,154 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:05,164 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:24:05,198 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:24:05,201 p=24237 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 21:24:05,217 p=24237 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 21:24:05,225 p=24237 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 21:24:05,227 p=24237 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 21:24:05,236 p=24237 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 21:24:05,239 p=24237 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 21:24:06,332 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:06,746 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:06,772 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:24:06,772 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:24:06,776 p=24237 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 21:24:07,963 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:08,162 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:24:08,256 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:08,287 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:24:08,338 p=24237 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 21:24:08,342 p=24237 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 21:24:09,633 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:09,642 p=24237 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 21:24:10,613 p=24237 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 21:24:10,617 p=24237 u=belov n=ansible | TASK [run elasticsearch] ******************************************************************************************************************************************************************************************
+2023-09-27 21:24:12,250 p=24237 u=belov n=ansible | changed: [elastic_server]
+2023-09-27 21:24:12,264 p=24237 u=belov n=ansible | PLAY [kibana installation] ****************************************************************************************************************************************************************************************
+2023-09-27 21:24:12,272 p=24237 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 21:24:13,701 p=24237 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 21:24:13,709 p=24237 u=belov n=ansible | TASK [pull kibana image] ******************************************************************************************************************************************************************************************
+2023-09-27 21:25:40,052 p=24237 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 21:25:40,055 p=24237 u=belov n=ansible | TASK [run kibana] *************************************************************************************************************************************************************************************************
+2023-09-27 21:25:46,306 p=24237 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 21:25:46,320 p=24237 u=belov n=ansible | PLAY [filebeat installation] **************************************************************************************************************************************************************************************
+2023-09-27 21:25:46,325 p=24237 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 21:25:49,029 p=24237 u=belov n=ansible | ok: [vm-1]
+2023-09-27 21:25:49,033 p=24237 u=belov n=ansible | ok: [vm-2]
+2023-09-27 21:25:49,046 p=24237 u=belov n=ansible | TASK [copy filebeat.yml] ******************************************************************************************************************************************************************************************
+2023-09-27 21:25:51,017 p=24237 u=belov n=ansible | changed: [vm-2]
+2023-09-27 21:25:51,043 p=24237 u=belov n=ansible | changed: [vm-1]
+2023-09-27 21:25:51,054 p=24237 u=belov n=ansible | TASK [pull filebeat image] ****************************************************************************************************************************************************************************************
+2023-09-27 21:26:04,053 p=24237 u=belov n=ansible | changed: [vm-1]
+2023-09-27 21:26:05,474 p=24237 u=belov n=ansible | changed: [vm-2]
+2023-09-27 21:26:05,477 p=24237 u=belov n=ansible | TASK [run filebeat] ***********************************************************************************************************************************************************************************************
+2023-09-27 21:26:08,654 p=24237 u=belov n=ansible | changed: [vm-1]
+2023-09-27 21:26:09,153 p=24237 u=belov n=ansible | changed: [vm-2]
+2023-09-27 21:26:09,166 p=24237 u=belov n=ansible | RUNNING HANDLER [restart filebeat] ********************************************************************************************************************************************************************************
+2023-09-27 21:26:10,760 p=24237 u=belov n=ansible | changed: [vm-2]
+2023-09-27 21:26:10,829 p=24237 u=belov n=ansible | changed: [vm-1]
+2023-09-27 21:26:10,840 p=24237 u=belov n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2023-09-27 21:26:10,840 p=24237 u=belov n=ansible | elastic_server             : ok=15   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 21:26:10,840 p=24237 u=belov n=ansible | kibana_server              : ok=15   changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 21:26:10,840 p=24237 u=belov n=ansible | vm-1                       : ok=17   changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 21:26:10,840 p=24237 u=belov n=ansible | vm-2                       : ok=17   changed=4    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:17:44,069 p=25399 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 22:17:44,131 p=25399 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 22:17:44,138 p=25399 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:17:47,821 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:17:48,097 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:17:48,099 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:17:48,500 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:17:48,528 p=25399 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 22:17:51,305 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:17:51,401 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:17:51,696 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:17:52,080 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:17:52,083 p=25399 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 22:17:53,556 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:17:53,729 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:17:53,860 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:17:53,997 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:17:54,000 p=25399 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 22:17:55,654 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:17:56,174 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:17:56,224 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:17:56,272 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:17:56,276 p=25399 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 22:17:57,919 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:17:58,203 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:17:58,225 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:17:58,508 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:17:58,511 p=25399 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 22:18:00,132 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:00,332 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:00,560 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:00,617 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:00,624 p=25399 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 22:18:01,989 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:02,303 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:02,360 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:02,516 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:02,519 p=25399 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 22:18:03,860 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:04,115 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:04,244 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:04,244 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:04,247 p=25399 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 22:18:06,041 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:06,330 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:06,469 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:06,720 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:06,724 p=25399 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 22:18:07,567 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:07,785 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:07,853 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:07,871 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:07,874 p=25399 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 22:18:07,903 p=25399 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 22:18:07,928 p=25399 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 22:18:07,928 p=25399 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 22:18:07,929 p=25399 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 22:18:07,936 p=25399 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 22:18:08,993 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:09,412 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:09,458 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:09,680 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:09,684 p=25399 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 22:18:10,846 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:10,984 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:11,193 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:11,212 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:11,268 p=25399 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 22:18:11,272 p=25399 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:18:12,403 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:12,411 p=25399 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 22:18:13,548 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:13,552 p=25399 u=belov n=ansible | TASK [run elasticsearch] ******************************************************************************************************************************************************************************************
+2023-09-27 22:18:14,517 p=25399 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:18:14,540 p=25399 u=belov n=ansible | PLAY [kibana installation] ****************************************************************************************************************************************************************************************
+2023-09-27 22:18:14,544 p=25399 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:18:15,984 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:15,992 p=25399 u=belov n=ansible | TASK [pull kibana image] ******************************************************************************************************************************************************************************************
+2023-09-27 22:18:17,430 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:17,433 p=25399 u=belov n=ansible | TASK [run kibana] *************************************************************************************************************************************************************************************************
+2023-09-27 22:18:18,578 p=25399 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:18:18,605 p=25399 u=belov n=ansible | PLAY [filebeat installation] **************************************************************************************************************************************************************************************
+2023-09-27 22:18:18,609 p=25399 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:18:20,152 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:20,191 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:20,204 p=25399 u=belov n=ansible | TASK [copy filebeat.yml] ******************************************************************************************************************************************************************************************
+2023-09-27 22:18:21,738 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:21,745 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:21,751 p=25399 u=belov n=ansible | TASK [pull filebeat image] ****************************************************************************************************************************************************************************************
+2023-09-27 22:18:23,138 p=25399 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:18:23,429 p=25399 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:18:23,433 p=25399 u=belov n=ansible | TASK [run filebeat] ***********************************************************************************************************************************************************************************************
+2023-09-27 22:18:25,118 p=25399 u=belov n=ansible | changed: [vm-1]
+2023-09-27 22:18:25,246 p=25399 u=belov n=ansible | changed: [vm-2]
+2023-09-27 22:18:25,274 p=25399 u=belov n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2023-09-27 22:18:25,274 p=25399 u=belov n=ansible | elastic_server             : ok=15   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:18:25,274 p=25399 u=belov n=ansible | kibana_server              : ok=15   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:18:25,274 p=25399 u=belov n=ansible | vm-1                       : ok=16   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:18:25,274 p=25399 u=belov n=ansible | vm-2                       : ok=16   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:38:13,484 p=26054 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 22:38:13,511 p=26054 u=belov n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/belov/diplom/ansible/elasticsearch_playbook.yml': line 55, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: kibana_node
+        image: "kibana:{{ elk_version }}"
+                ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2023-09-27 22:38:44,765 p=26059 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 22:38:44,826 p=26059 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 22:38:44,833 p=26059 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:38:47,685 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:47,727 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:47,900 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:48,015 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:48,042 p=26059 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 22:38:50,631 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:50,966 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:51,147 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:51,249 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:51,252 p=26059 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 22:38:52,747 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:53,027 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:53,030 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:53,036 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:53,049 p=26059 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 22:38:54,211 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:54,415 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:54,466 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:54,524 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:54,527 p=26059 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 22:38:55,736 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:56,121 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:56,135 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:56,372 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:56,375 p=26059 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 22:38:57,458 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:57,767 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:57,768 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:57,892 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:57,895 p=26059 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 22:38:59,019 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:38:59,343 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:38:59,422 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:38:59,440 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:38:59,443 p=26059 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 22:39:00,814 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:01,054 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:01,155 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:01,619 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:01,622 p=26059 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 22:39:03,534 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:03,908 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:03,910 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:04,082 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:04,085 p=26059 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 22:39:05,123 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:05,342 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:05,381 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:05,498 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:05,501 p=26059 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 22:39:05,518 p=26059 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 22:39:05,531 p=26059 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 22:39:05,532 p=26059 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 22:39:05,544 p=26059 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 22:39:05,547 p=26059 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 22:39:06,696 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:06,985 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:07,065 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:07,087 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:07,091 p=26059 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 22:39:08,069 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:08,202 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:08,224 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:08,233 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:08,289 p=26059 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 22:39:08,293 p=26059 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:39:09,541 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:09,549 p=26059 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 22:39:10,503 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:10,506 p=26059 u=belov n=ansible | TASK [run elasticsearch] ******************************************************************************************************************************************************************************************
+2023-09-27 22:39:11,549 p=26059 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:39:11,568 p=26059 u=belov n=ansible | PLAY [kibana installation] ****************************************************************************************************************************************************************************************
+2023-09-27 22:39:11,579 p=26059 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:39:12,978 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:12,986 p=26059 u=belov n=ansible | TASK [pull kibana image] ******************************************************************************************************************************************************************************************
+2023-09-27 22:39:14,075 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:14,078 p=26059 u=belov n=ansible | TASK [wait for elasticsearch is started] **************************************************************************************************************************************************************************
+2023-09-27 22:39:14,927 p=26059 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:39:14,930 p=26059 u=belov n=ansible | TASK [run kibana] *************************************************************************************************************************************************************************************************
+2023-09-27 22:39:16,711 p=26059 u=belov n=ansible | changed: [kibana_server]
+2023-09-27 22:39:16,725 p=26059 u=belov n=ansible | PLAY [filebeat installation] **************************************************************************************************************************************************************************************
+2023-09-27 22:39:16,729 p=26059 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:39:18,090 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:18,110 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:18,134 p=26059 u=belov n=ansible | TASK [copy filebeat.yml] ******************************************************************************************************************************************************************************************
+2023-09-27 22:39:20,180 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:20,322 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:20,325 p=26059 u=belov n=ansible | TASK [pull filebeat image] ****************************************************************************************************************************************************************************************
+2023-09-27 22:39:21,277 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:21,317 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:21,321 p=26059 u=belov n=ansible | TASK [wait for kibana is started] *********************************************************************************************************************************************************************************
+2023-09-27 22:39:55,252 p=26059 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:39:55,496 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:55,499 p=26059 u=belov n=ansible | TASK [run filebeat] ***********************************************************************************************************************************************************************************************
+2023-09-27 22:39:56,558 p=26059 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:39:56,824 p=26059 u=belov n=ansible | changed: [vm-1]
+2023-09-27 22:39:56,852 p=26059 u=belov n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2023-09-27 22:39:56,852 p=26059 u=belov n=ansible | elastic_server             : ok=15   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:39:56,852 p=26059 u=belov n=ansible | kibana_server              : ok=16   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:39:56,852 p=26059 u=belov n=ansible | vm-1                       : ok=17   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:39:56,852 p=26059 u=belov n=ansible | vm-2                       : ok=17   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:41:47,039 p=26699 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 22:41:47,105 p=26699 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 22:41:47,115 p=26699 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:41:49,807 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:50,221 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:50,263 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:50,514 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:50,542 p=26699 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 22:41:52,748 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:53,167 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:53,295 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:53,419 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:53,422 p=26699 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 22:41:54,658 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:54,993 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:54,993 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:55,085 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:55,089 p=26699 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 22:41:56,282 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:56,636 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:56,755 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:56,769 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:56,773 p=26699 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 22:41:57,879 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:58,234 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:58,236 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:58,299 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:58,302 p=26699 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 22:41:59,465 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:41:59,638 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:41:59,860 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:41:59,863 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:41:59,866 p=26699 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 22:42:01,418 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:01,719 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:01,878 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:01,901 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:01,905 p=26699 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 22:42:03,332 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:03,595 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:03,630 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:03,793 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:03,796 p=26699 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 22:42:05,426 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:05,783 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:05,934 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:06,006 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:06,009 p=26699 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 22:42:07,089 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:07,167 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:07,212 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:07,242 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:07,245 p=26699 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 22:42:07,260 p=26699 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 22:42:07,269 p=26699 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 22:42:07,269 p=26699 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 22:42:07,279 p=26699 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 22:42:07,283 p=26699 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 22:42:08,534 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:08,856 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:08,944 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:09,027 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:09,031 p=26699 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 22:42:09,976 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:10,055 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:10,117 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:10,254 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:10,321 p=26699 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 22:42:10,324 p=26699 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:42:11,471 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:11,479 p=26699 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 22:42:12,482 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:12,486 p=26699 u=belov n=ansible | TASK [run elasticsearch] ******************************************************************************************************************************************************************************************
+2023-09-27 22:42:13,385 p=26699 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:42:13,400 p=26699 u=belov n=ansible | PLAY [kibana installation] ****************************************************************************************************************************************************************************************
+2023-09-27 22:42:13,404 p=26699 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:42:14,734 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:14,743 p=26699 u=belov n=ansible | TASK [pull kibana image] ******************************************************************************************************************************************************************************************
+2023-09-27 22:42:15,747 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:15,750 p=26699 u=belov n=ansible | TASK [wait for elasticsearch is started] **************************************************************************************************************************************************************************
+2023-09-27 22:42:16,717 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:16,725 p=26699 u=belov n=ansible | TASK [run kibana] *************************************************************************************************************************************************************************************************
+2023-09-27 22:42:17,837 p=26699 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:42:17,854 p=26699 u=belov n=ansible | PLAY [filebeat installation] **************************************************************************************************************************************************************************************
+2023-09-27 22:42:17,858 p=26699 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:42:19,290 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:19,331 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:19,351 p=26699 u=belov n=ansible | TASK [copy filebeat.yml] ******************************************************************************************************************************************************************************************
+2023-09-27 22:42:20,863 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:20,924 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:20,927 p=26699 u=belov n=ansible | TASK [pull filebeat image] ****************************************************************************************************************************************************************************************
+2023-09-27 22:42:21,956 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:21,992 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:21,996 p=26699 u=belov n=ansible | TASK [wait for kibana is started] *********************************************************************************************************************************************************************************
+2023-09-27 22:42:22,847 p=26699 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:42:22,847 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:22,851 p=26699 u=belov n=ansible | TASK [run filebeat] ***********************************************************************************************************************************************************************************************
+2023-09-27 22:42:23,919 p=26699 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:42:24,389 p=26699 u=belov n=ansible | changed: [vm-1]
+2023-09-27 22:42:24,411 p=26699 u=belov n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2023-09-27 22:42:24,415 p=26699 u=belov n=ansible | elastic_server             : ok=15   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:42:24,415 p=26699 u=belov n=ansible | kibana_server              : ok=16   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:42:24,415 p=26699 u=belov n=ansible | vm-1                       : ok=17   changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:42:24,415 p=26699 u=belov n=ansible | vm-2                       : ok=17   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:45:54,666 p=27342 u=belov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2023-09-27 22:45:54,727 p=27342 u=belov n=ansible | PLAY [prepare to install ELK] *************************************************************************************************************************************************************************************
+2023-09-27 22:45:54,735 p=27342 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:45:56,953 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:45:57,075 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:45:57,137 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:45:57,174 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:45:57,196 p=27342 u=belov n=ansible | TASK [docker_installation : update apt cache once in an hour] *****************************************************************************************************************************************************
+2023-09-27 22:45:59,359 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:45:59,610 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:45:59,699 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:45:59,815 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:45:59,818 p=27342 u=belov n=ansible | TASK [docker_installation : install apt-transport-https] **********************************************************************************************************************************************************
+2023-09-27 22:46:01,209 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:01,232 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:01,424 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:01,519 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:01,522 p=27342 u=belov n=ansible | TASK [docker_installation : install ca-certificates] **************************************************************************************************************************************************************
+2023-09-27 22:46:02,715 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:03,064 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:03,081 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:03,354 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:03,357 p=27342 u=belov n=ansible | TASK [docker_installation : install curl] *************************************************************************************************************************************************************************
+2023-09-27 22:46:04,827 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:05,127 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:05,140 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:05,197 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:05,200 p=27342 u=belov n=ansible | TASK [docker_installation : install gnupg] ************************************************************************************************************************************************************************
+2023-09-27 22:46:06,352 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:06,659 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:06,775 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:06,819 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:06,822 p=27342 u=belov n=ansible | TASK [docker_installation : install lsb-release] ******************************************************************************************************************************************************************
+2023-09-27 22:46:07,978 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:08,439 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:08,525 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:08,618 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:08,621 p=27342 u=belov n=ansible | TASK [docker_installation : install software-properties-common] ***************************************************************************************************************************************************
+2023-09-27 22:46:09,958 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:10,001 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:10,169 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:10,183 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:10,194 p=27342 u=belov n=ansible | TASK [docker_installation : add docker GPG key] *******************************************************************************************************************************************************************
+2023-09-27 22:46:12,022 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:12,341 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:12,393 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:12,393 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:12,396 p=27342 u=belov n=ansible | TASK [docker_installation : add docker repository] ****************************************************************************************************************************************************************
+2023-09-27 22:46:13,287 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:13,344 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:13,421 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:13,450 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:13,454 p=27342 u=belov n=ansible | TASK [docker_installation : update apt cache] *********************************************************************************************************************************************************************
+2023-09-27 22:46:13,475 p=27342 u=belov n=ansible | skipping: [elastic_server]
+2023-09-27 22:46:13,482 p=27342 u=belov n=ansible | skipping: [kibana_server]
+2023-09-27 22:46:13,483 p=27342 u=belov n=ansible | skipping: [vm-1]
+2023-09-27 22:46:13,500 p=27342 u=belov n=ansible | skipping: [vm-2]
+2023-09-27 22:46:13,503 p=27342 u=belov n=ansible | TASK [docker_installation : install docker] ***********************************************************************************************************************************************************************
+2023-09-27 22:46:14,915 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:14,998 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:15,083 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:15,414 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:15,418 p=27342 u=belov n=ansible | TASK [docker_installation : start docker] *************************************************************************************************************************************************************************
+2023-09-27 22:46:16,581 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:16,743 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:16,761 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:16,767 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:16,819 p=27342 u=belov n=ansible | PLAY [elasticsearch installation] *********************************************************************************************************************************************************************************
+2023-09-27 22:46:16,822 p=27342 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:46:17,928 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:17,935 p=27342 u=belov n=ansible | TASK [pull elasticsearch image] ***********************************************************************************************************************************************************************************
+2023-09-27 22:46:19,036 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:19,039 p=27342 u=belov n=ansible | TASK [run elasticsearch] ******************************************************************************************************************************************************************************************
+2023-09-27 22:46:20,122 p=27342 u=belov n=ansible | ok: [elastic_server]
+2023-09-27 22:46:20,134 p=27342 u=belov n=ansible | PLAY [kibana installation] ****************************************************************************************************************************************************************************************
+2023-09-27 22:46:20,139 p=27342 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:46:21,712 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:21,720 p=27342 u=belov n=ansible | TASK [pull kibana image] ******************************************************************************************************************************************************************************************
+2023-09-27 22:46:22,855 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:22,858 p=27342 u=belov n=ansible | TASK [wait for elasticsearch is started] **************************************************************************************************************************************************************************
+2023-09-27 22:46:23,704 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:23,707 p=27342 u=belov n=ansible | TASK [run kibana] *************************************************************************************************************************************************************************************************
+2023-09-27 22:46:24,816 p=27342 u=belov n=ansible | ok: [kibana_server]
+2023-09-27 22:46:24,827 p=27342 u=belov n=ansible | PLAY [filebeat installation] **************************************************************************************************************************************************************************************
+2023-09-27 22:46:24,832 p=27342 u=belov n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2023-09-27 22:46:26,349 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:26,406 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:26,420 p=27342 u=belov n=ansible | TASK [copy filebeat.yml] ******************************************************************************************************************************************************************************************
+2023-09-27 22:46:28,004 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:28,004 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:28,007 p=27342 u=belov n=ansible | TASK [pull filebeat image] ****************************************************************************************************************************************************************************************
+2023-09-27 22:46:29,046 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:29,082 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:29,090 p=27342 u=belov n=ansible | TASK [wait for kibana is started] *********************************************************************************************************************************************************************************
+2023-09-27 22:46:30,018 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:30,056 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:30,059 p=27342 u=belov n=ansible | TASK [run filebeat] ***********************************************************************************************************************************************************************************************
+2023-09-27 22:46:31,233 p=27342 u=belov n=ansible | ok: [vm-1]
+2023-09-27 22:46:31,275 p=27342 u=belov n=ansible | ok: [vm-2]
+2023-09-27 22:46:31,296 p=27342 u=belov n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2023-09-27 22:46:31,296 p=27342 u=belov n=ansible | elastic_server             : ok=15   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:46:31,296 p=27342 u=belov n=ansible | kibana_server              : ok=16   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:46:31,296 p=27342 u=belov n=ansible | vm-1                       : ok=17   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-09-27 22:46:31,296 p=27342 u=belov n=ansible | vm-2                       : ok=17   changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
