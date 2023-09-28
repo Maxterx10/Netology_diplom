@@ -1,27 +1,27 @@
 {
   "version": 4,
   "terraform_version": "1.5.5",
-  "serial": 2314,
+  "serial": 2370,
   "lineage": "0b07665d-3295-1a9c-507b-50c65f38f778",
   "outputs": {
     "ext_ip_address_alb": {
-      "value": "158.160.121.77",
+      "value": "51.250.67.204",
       "type": "string"
     },
     "ip_list": {
       "value": [
-        "ext_ip bastion:       158.160.109.121",
+        "ext_ip bastion:       84.201.131.223",
         "ext_ip elasticsearch: ",
-        "ext_ip kibana:        158.160.98.77",
+        "ext_ip kibana:        84.252.131.166",
         "ext_ip vm-1:          ",
         "ext_ip vm-2:          ",
-        "ext_ip zabbix-server: 158.160.113.105",
-        "int_ip bastion:       192.168.11.30",
-        "int_ip elasticsearch: 192.168.10.7",
-        "int_ip kibana:        192.168.11.3",
-        "int_ip vm-1:          192.168.10.36",
-        "int_ip vm-2:          192.168.10.29",
-        "int_ip zabbix-server: 192.168.11.15"
+        "ext_ip zabbix-server: 84.201.172.183",
+        "int_ip bastion:       192.168.11.11",
+        "int_ip elasticsearch: 192.168.10.15",
+        "int_ip kibana:        192.168.11.12",
+        "int_ip vm-1:          192.168.10.29",
+        "int_ip vm-2:          192.168.10.7",
+        "int_ip zabbix-server: 192.168.11.24"
       ],
       "type": [
         "set",
@@ -29,7 +29,7 @@
       ]
     },
     "ssh_command": {
-      "value": "ssh -J user@158.160.109.121 user@",
+      "value": "ssh -J user@84.201.131.223 user@",
       "type": "string"
     }
   },
@@ -43,18 +43,18 @@
         {
           "schema_version": 0,
           "attributes": {
-            "content": "[web-servers]\nvm-1 ansible_host=192.168.10.36\nvm-2 ansible_host=192.168.10.29\n\n\n[zabbix]\nzabbix_server ansible_host=192.168.11.15 \n\n[elastic]\nelastic_server ansible_host=192.168.10.7 \n\n[kibana]\nkibana_server ansible_host=192.168.11.3 \n\n[bastion]\nbastion_host ansible_host=158.160.109.121\n\n[nodes:children]\nweb-servers\nzabbix\nelastic\nkibana\n\n[nodes:vars]\nansible_ssh_common_args='-o ProxyCommand=\"ssh -W %h:%p -q user@158.160.109.121\"'\n\n[all:vars]\nansible_connection=ssh\nansible_user=user\nzabbix_ext_ip=158.160.113.105\nalb_ip=158.160.121.77\n",
+            "content": "[web-servers]\nvm-1 ansible_host=192.168.10.29\nvm-2 ansible_host=192.168.10.7\n\n\n[zabbix]\nzabbix_server ansible_host=192.168.11.24 \n\n[elastic]\nelastic_server ansible_host=192.168.10.15 \n\n[kibana]\nkibana_server ansible_host=192.168.11.12 \n\n[bastion]\nbastion_host ansible_host=84.201.131.223\n\n[nodes:children]\nweb-servers\nzabbix\nelastic\nkibana\n\n[nodes:vars]\nansible_ssh_common_args='-o ProxyCommand=\"ssh -W %h:%p -q user@84.201.131.223\"'\n\n[all:vars]\nansible_connection=ssh\nansible_user=user\nzabbix_ext_ip=84.201.172.183\nalb_ip=51.250.67.204\n",
             "content_base64": null,
-            "content_base64sha256": "dZ2SX+tCy8i/F9CQ/bGWbDqf0WpmNO3/iPWEUF7blxo=",
-            "content_base64sha512": "43N6gZh7jmGv3cf+pwmHSrn8zJPiCKvLd2lWuvwiK2Ll6kAtsWu9Mfq86Q4kda5Zw3uA+nZrowJakzEikF2sPw==",
-            "content_md5": "770be596fd9cc566c86265c3b3753322",
-            "content_sha1": "1afc6b13dea9b2ea0fdf5c61ad588dc489dc233f",
-            "content_sha256": "759d925feb42cbc8bf17d090fdb1966c3a9fd16a6634edff88f584505edb971a",
-            "content_sha512": "e3737a81987b8e61afddc7fea709874ab9fccc93e208abcb776956bafc222b62e5ea402db16bbd31fabce90e2475ae59c37b80fa766ba3025a933122905dac3f",
+            "content_base64sha256": "kEwAKjpQRL4fDuwr3PaamabLRn8JxjI/ihZZL61wkzM=",
+            "content_base64sha512": "J/CHX0dWlrJ5y/31sRz5Wh5n4gTbD8WeyYFZX2B/2S7tZwYabN0UezkrHoLbbPnFO33guPV3ovWgiRDeEsXvhQ==",
+            "content_md5": "b2678abed706099f9154b3bc2f41deaa",
+            "content_sha1": "84597fe13381ae65dcf9970c33ce37c00f21e12b",
+            "content_sha256": "904c002a3a5044be1f0eec2bdcf69a99a6cb467f09c6323f8a16592fad709333",
+            "content_sha512": "27f0875f475696b279cbfdf5b11cf95a1e67e204db0fc59ec981595f607fd92eed67061a6cdd147b392b1e82db6cf9c53b7de0b8f577a2f5a08910de12c5ef85",
             "directory_permission": "0777",
             "file_permission": "0777",
             "filename": "./../ansible/hosts.ini",
-            "id": "1afc6b13dea9b2ea0fdf5c61ad588dc489dc233f",
+            "id": "84597fe13381ae65dcf9970c33ce37c00f21e12b",
             "sensitive_content": null,
             "source": null
           },
@@ -94,7 +94,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:06:07Z",
+            "created_at": "2023-09-28T19:27:17Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
             "grpc_backend": [],
@@ -132,13 +132,13 @@
                 "port": 80,
                 "storage_bucket": "",
                 "target_group_ids": [
-                  "ds7lekk4tuafrf078r6u"
+                  "ds7a1lq9jv5g3s93q0p7"
                 ],
                 "tls": [],
                 "weight": 1
               }
             ],
-            "id": "ds7qf1bhurd4tlh4k377",
+            "id": "ds7upa10jik72udlhj4l",
             "labels": null,
             "name": "bg-1",
             "session_affinity": [
@@ -185,10 +185,10 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:09Z",
+            "created_at": "2023-09-28T19:26:07Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "ds7114rd161j0phhfj94",
+            "id": "ds7ivo07ujgri5dqe4lj",
             "labels": null,
             "name": "router-1",
             "route_options": [],
@@ -213,16 +213,16 @@
                 "location": [
                   {
                     "disable_traffic": false,
-                    "subnet_id": "e9bmkb7lstniqqli53m1",
+                    "subnet_id": "e9bngslkeorl1psam7o6",
                     "zone_id": "ru-central1-a"
                   }
                 ]
               }
             ],
-            "created_at": "2023-09-28T18:05:22Z",
+            "created_at": "2023-09-28T19:26:15Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "ds7oqlasboj589kjk2gq",
+            "id": "ds7kia9vb9nmc8rnq7a9",
             "labels": null,
             "listener": [
               {
@@ -232,7 +232,7 @@
                       {
                         "external_ipv4_address": [
                           {
-                            "address": "158.160.121.77"
+                            "address": "51.250.67.204"
                           }
                         ],
                         "external_ipv6_address": [],
@@ -250,7 +250,7 @@
                       {
                         "allow_http10": false,
                         "http2_options": [],
-                        "http_router_id": "ds7114rd161j0phhfj94",
+                        "http_router_id": "ds7ivo07ujgri5dqe4lj",
                         "rewrite_request_id": false
                       }
                     ],
@@ -262,14 +262,14 @@
                 "tls": []
               }
             ],
-            "log_group_id": "ckg23qvjc1pb860cfef7",
+            "log_group_id": "ckgoeh4apog6gvb5mn31",
             "log_options": [],
             "name": "alb-1",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "region_id": "",
             "security_group_ids": [
-              "enpofv8bdk2d1e1b0n4r",
-              "enpv6lnru0v66ecdhm5m"
+              "enp2g9i6bj6eq6uvs8nm",
+              "enp56g30kr6t3u2uftl7"
             ],
             "status": "active",
             "timeouts": null
@@ -295,22 +295,22 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:06:07Z",
+            "created_at": "2023-09-28T19:27:17Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "ds7lekk4tuafrf078r6u",
+            "id": "ds7a1lq9jv5g3s93q0p7",
             "labels": null,
             "name": "tg-1",
             "target": [
               {
-                "ip_address": "192.168.10.36",
-                "private_ipv4_address": false,
-                "subnet_id": "e9bl0la59bcsr28hn8ge"
-              },
-              {
                 "ip_address": "192.168.10.29",
                 "private_ipv4_address": false,
-                "subnet_id": "e9bl0la59bcsr28hn8ge"
+                "subnet_id": "e9b4665d1jht2h2d8ehd"
+              },
+              {
+                "ip_address": "192.168.10.7",
+                "private_ipv4_address": false,
+                "subnet_id": "e9b4665d1jht2h2d8ehd"
               }
             ],
             "timeouts": null
@@ -345,8 +345,8 @@
           "schema_version": 0,
           "attributes": {
             "authority": null,
-            "http_router_id": "ds7114rd161j0phhfj94",
-            "id": "ds7114rd161j0phhfj94/vh-1",
+            "http_router_id": "ds7ivo07ujgri5dqe4lj",
+            "id": "ds7ivo07ujgri5dqe4lj/vh-1",
             "modify_request_headers": [],
             "modify_response_headers": [],
             "name": "vh-1",
@@ -360,7 +360,7 @@
                     "http_route_action": [
                       {
                         "auto_host_rewrite": false,
-                        "backend_group_id": "ds7qf1bhurd4tlh4k377",
+                        "backend_group_id": "ds7upa10jik72udlhj4l",
                         "host_rewrite": "",
                         "idle_timeout": "",
                         "prefix_rewrite": "",
@@ -415,8 +415,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhm46eusud0qhi1k8u94",
-                "disk_id": "fhm46eusud0qhi1k8u94",
+                "device_name": "fhmcsj0nbf42ji5aofvd",
+                "disk_id": "fhmcsj0nbf42ji5aofvd",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -431,14 +431,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:26Z",
+            "created_at": "2023-09-28T19:26:25Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhmcp8scs3br1fmt66q2.auto.internal",
+            "fqdn": "fhmlpm220ptdna45n625.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhmcp8scs3br1fmt66q2",
+            "id": "fhmlpm220ptdna45n625",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -458,22 +458,22 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.11.30",
+                "ip_address": "192.168.11.11",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:cc:a3:8c:e0",
+                "mac_address": "d0:0d:15:cd:84:20",
                 "nat": true,
                 "nat_dns_record": [],
-                "nat_ip_address": "158.160.109.121",
+                "nat_ip_address": "84.201.131.223",
                 "nat_ip_version": "IPV4",
                 "security_group_ids": [
-                  "enp5stqf6a5mbt5ur8a4",
-                  "enpofv8bdk2d1e1b0n4r",
-                  "enppukbje9luu6f7ms3j"
+                  "enp1l64du3i00ge0kl1t",
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enpc0b1eqme5me4h9l7e"
                 ],
-                "subnet_id": "e9bmkb7lstniqqli53m1"
+                "subnet_id": "e9bngslkeorl1psam7o6"
               }
             ],
             "placement_policy": [
@@ -532,8 +532,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhm1pjiklha7tphvsl1r",
-                "disk_id": "fhm1pjiklha7tphvsl1r",
+                "device_name": "fhm40tdljk9j1384rkas",
+                "disk_id": "fhm40tdljk9j1384rkas",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -548,14 +548,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:25Z",
+            "created_at": "2023-09-28T19:26:25Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhmdse2b9ke3uhieiffo.auto.internal",
+            "fqdn": "fhmv5iifmg23a68bdqm7.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhmdse2b9ke3uhieiffo",
+            "id": "fhmv5iifmg23a68bdqm7",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -575,23 +575,23 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.10.7",
+                "ip_address": "192.168.10.15",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:de:38:4b:4d",
+                "mac_address": "d0:0d:1f:2c:a4:fb",
                 "nat": false,
                 "nat_dns_record": [],
                 "nat_ip_address": "",
                 "nat_ip_version": "",
                 "security_group_ids": [
-                  "enp4naphdrm83o085ibk",
-                  "enphna4fream570qesec",
-                  "enpofv8bdk2d1e1b0n4r",
-                  "enppukbje9luu6f7ms3j"
+                  "enp1l64du3i00ge0kl1t",
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enpodj7s1idct58hr19s",
+                  "enprm0e2mgqu9ju55d0j"
                 ],
-                "subnet_id": "e9bl0la59bcsr28hn8ge"
+                "subnet_id": "e9b4665d1jht2h2d8ehd"
               }
             ],
             "placement_policy": [
@@ -652,8 +652,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhmk20of339j61k7c4ae",
-                "disk_id": "fhmk20of339j61k7c4ae",
+                "device_name": "fhm5jhj8fbtlktkjcft4",
+                "disk_id": "fhm5jhj8fbtlktkjcft4",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -668,14 +668,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:26Z",
+            "created_at": "2023-09-28T19:26:25Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhmgjvrfqv15lk8ekj35.auto.internal",
+            "fqdn": "fhmlg9fr5419k8omok56.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhmgjvrfqv15lk8ekj35",
+            "id": "fhmlg9fr5419k8omok56",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -695,23 +695,23 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.11.3",
+                "ip_address": "192.168.11.12",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:10:9f:f6:fd",
+                "mac_address": "d0:0d:15:82:5f:b2",
                 "nat": true,
                 "nat_dns_record": [],
-                "nat_ip_address": "158.160.98.77",
+                "nat_ip_address": "84.252.131.166",
                 "nat_ip_version": "IPV4",
                 "security_group_ids": [
-                  "enp4naphdrm83o085ibk",
-                  "enpgius7vidk2in9807g",
-                  "enpofv8bdk2d1e1b0n4r",
-                  "enppukbje9luu6f7ms3j"
+                  "enp1l64du3i00ge0kl1t",
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enp3rqgt5k55at46kn23",
+                  "enpodj7s1idct58hr19s"
                 ],
-                "subnet_id": "e9bmkb7lstniqqli53m1"
+                "subnet_id": "e9bngslkeorl1psam7o6"
               }
             ],
             "placement_policy": [
@@ -773,8 +773,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhmm3tu0asd4j2l25od9",
-                "disk_id": "fhmm3tu0asd4j2l25od9",
+                "device_name": "fhmg7lp15v2hr6ftgt84",
+                "disk_id": "fhmg7lp15v2hr6ftgt84",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -789,14 +789,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:26Z",
+            "created_at": "2023-09-28T19:26:27Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhm3659qrop53d08l182.auto.internal",
+            "fqdn": "fhmmfc0bg7uuopu8ekvr.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhm3659qrop53d08l182",
+            "id": "fhmmfc0bg7uuopu8ekvr",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -816,23 +816,23 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.10.36",
+                "ip_address": "192.168.10.29",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:33:15:3a:de",
+                "mac_address": "d0:0d:16:7b:00:b8",
                 "nat": false,
                 "nat_dns_record": [],
                 "nat_ip_address": "",
                 "nat_ip_version": "",
                 "security_group_ids": [
-                  "enp4naphdrm83o085ibk",
-                  "enp58ducrk25gckh90qr",
-                  "enpofv8bdk2d1e1b0n4r",
-                  "enppukbje9luu6f7ms3j"
+                  "enp1l64du3i00ge0kl1t",
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enpcmgpmrp7e9vdh9i6a",
+                  "enpodj7s1idct58hr19s"
                 ],
-                "subnet_id": "e9bl0la59bcsr28hn8ge"
+                "subnet_id": "e9b4665d1jht2h2d8ehd"
               }
             ],
             "placement_policy": [
@@ -887,8 +887,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhmakbtub28e7nce1he9",
-                "disk_id": "fhmakbtub28e7nce1he9",
+                "device_name": "fhmqr4mca6dt5p7peo37",
+                "disk_id": "fhmqr4mca6dt5p7peo37",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -903,14 +903,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:25Z",
+            "created_at": "2023-09-28T19:26:27Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhm10b30e97ql5o06v2b.auto.internal",
+            "fqdn": "fhmagg80pq34d9dpkup6.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhm10b30e97ql5o06v2b",
+            "id": "fhmagg80pq34d9dpkup6",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -930,23 +930,23 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.10.29",
+                "ip_address": "192.168.10.7",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:10:2c:60:72",
+                "mac_address": "d0:0d:a8:41:00:ce",
                 "nat": false,
                 "nat_dns_record": [],
                 "nat_ip_address": "",
                 "nat_ip_version": "",
                 "security_group_ids": [
-                  "enp4naphdrm83o085ibk",
-                  "enp58ducrk25gckh90qr",
-                  "enpofv8bdk2d1e1b0n4r",
-                  "enppukbje9luu6f7ms3j"
+                  "enp1l64du3i00ge0kl1t",
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enpcmgpmrp7e9vdh9i6a",
+                  "enpodj7s1idct58hr19s"
                 ],
-                "subnet_id": "e9bl0la59bcsr28hn8ge"
+                "subnet_id": "e9b4665d1jht2h2d8ehd"
               }
             ],
             "placement_policy": [
@@ -1008,8 +1008,8 @@
             "boot_disk": [
               {
                 "auto_delete": true,
-                "device_name": "fhmj86bvn2dcgl8rosrl",
-                "disk_id": "fhmj86bvn2dcgl8rosrl",
+                "device_name": "fhm6uqcomrshtgio0bo5",
+                "disk_id": "fhm6uqcomrshtgio0bo5",
                 "initialize_params": [
                   {
                     "block_size": 4096,
@@ -1024,14 +1024,14 @@
                 "mode": "READ_WRITE"
               }
             ],
-            "created_at": "2023-09-28T18:05:22Z",
+            "created_at": "2023-09-28T19:26:23Z",
             "description": "",
             "filesystem": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "fqdn": "fhm9oroqgcnhg080rvpp.auto.internal",
+            "fqdn": "fhmjr9aol83lhad6kldl.auto.internal",
             "gpu_cluster_id": "",
             "hostname": "",
-            "id": "fhm9oroqgcnhg080rvpp",
+            "id": "fhmjr9aol83lhad6kldl",
             "labels": null,
             "local_disk": [],
             "metadata": {
@@ -1051,22 +1051,22 @@
               {
                 "dns_record": [],
                 "index": 0,
-                "ip_address": "192.168.11.15",
+                "ip_address": "192.168.11.24",
                 "ipv4": true,
                 "ipv6": false,
                 "ipv6_address": "",
                 "ipv6_dns_record": [],
-                "mac_address": "d0:0d:9c:6f:1a:83",
+                "mac_address": "d0:0d:13:da:55:8a",
                 "nat": true,
                 "nat_dns_record": [],
-                "nat_ip_address": "158.160.113.105",
+                "nat_ip_address": "84.201.172.183",
                 "nat_ip_version": "IPV4",
                 "security_group_ids": [
-                  "enp4naphdrm83o085ibk",
-                  "enpesjflgvascgtp2gfu",
-                  "enpofv8bdk2d1e1b0n4r"
+                  "enp2g9i6bj6eq6uvs8nm",
+                  "enpodj7s1idct58hr19s",
+                  "enpuvp8ootkj0k6tg13f"
                 ],
-                "subnet_id": "e9bmkb7lstniqqli53m1"
+                "subnet_id": "e9bngslkeorl1psam7o6"
               }
             ],
             "placement_policy": [
@@ -1120,18 +1120,18 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:06:46Z",
+            "created_at": "2023-09-28T19:27:45Z",
             "description": "",
             "disk_ids": [
-              "fhmm3tu0asd4j2l25od9",
-              "fhmk20of339j61k7c4ae",
-              "fhm46eusud0qhi1k8u94",
-              "fhmj86bvn2dcgl8rosrl",
-              "fhmakbtub28e7nce1he9",
-              "fhm1pjiklha7tphvsl1r"
+              "fhmg7lp15v2hr6ftgt84",
+              "fhm6uqcomrshtgio0bo5",
+              "fhmqr4mca6dt5p7peo37",
+              "fhmcsj0nbf42ji5aofvd",
+              "fhm5jhj8fbtlktkjcft4",
+              "fhm40tdljk9j1384rkas"
             ],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "fd8scfo75hbarvb5bbng",
+            "id": "fd82qcqhmrbn03tt2o0i",
             "labels": null,
             "name": "snap-1",
             "retention_period": "168h0m0s",
@@ -1186,10 +1186,10 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:09Z",
+            "created_at": "2023-09-28T19:26:07Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpkq15tta61juajod85",
+            "id": "enpkq1snsdjfa4orsg7d",
             "labels": {},
             "name": "nat-gateway",
             "shared_egress_gateway": [
@@ -1211,11 +1211,11 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:09Z",
-            "default_security_group_id": "enpvhodk74da4df9qtcs",
+            "created_at": "2023-09-28T19:26:07Z",
+            "default_security_group_id": "enppvdkopkvkukef27oc",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpu94e7m9go12omtr4p",
+            "id": "enp2pn6lgqa1np2hscto",
             "labels": {},
             "name": "network-1",
             "subnet_ids": [],
@@ -1235,17 +1235,17 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:12Z",
+            "created_at": "2023-09-28T19:26:10Z",
             "description": "",
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enp3tt6k2oq2pf5j4di2",
+            "id": "enp0hglgakli5s02ielm",
             "labels": {},
             "name": "rt",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "static_route": [
               {
                 "destination_prefix": "0.0.0.0/0",
-                "gateway_id": "enpkq15tta61juajod85",
+                "gateway_id": "enpkq1snsdjfa4orsg7d",
                 "next_hop_address": ""
               }
             ],
@@ -1269,16 +1269,29 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:17Z",
+            "created_at": "2023-09-28T19:26:14Z",
             "description": "",
             "egress": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpv6lnru0v66ecdhm5m",
+            "id": "enp56g30kr6t3u2uftl7",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpm115cdn5lcl10uq2l",
+                "id": "enp5jmd8bdqbal7gumm8",
+                "labels": {},
+                "port": 30080,
+                "predefined_target": "loadbalancer_healthchecks",
+                "protocol": "TCP",
+                "security_group_id": "",
+                "to_port": -1,
+                "v4_cidr_blocks": [],
+                "v6_cidr_blocks": []
+              },
+              {
+                "description": "",
+                "from_port": -1,
+                "id": "enpllr64s38pot4knri5",
                 "labels": {},
                 "port": 80,
                 "predefined_target": "",
@@ -1289,24 +1302,11 @@
                   "0.0.0.0/0"
                 ],
                 "v6_cidr_blocks": []
-              },
-              {
-                "description": "",
-                "from_port": -1,
-                "id": "enpngiqtu686ninfovgc",
-                "labels": {},
-                "port": 30080,
-                "predefined_target": "loadbalancer_healthchecks",
-                "protocol": "TCP",
-                "security_group_id": "",
-                "to_port": -1,
-                "v4_cidr_blocks": [],
-                "v6_cidr_blocks": []
               }
             ],
             "labels": {},
             "name": "alb-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1327,13 +1327,13 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:13Z",
+            "created_at": "2023-09-28T19:26:16Z",
             "description": "",
             "egress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enp0q23eal6ec5pd4l8q",
+                "id": "enp7e0m79tir8u69of2b",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
@@ -1347,12 +1347,12 @@
               }
             ],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enp5stqf6a5mbt5ur8a4",
+            "id": "enpc0b1eqme5me4h9l7e",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpvhu41se1ppms74joa",
+                "id": "enp92a96669obs5qhb0p",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
@@ -1367,7 +1367,7 @@
             ],
             "labels": {},
             "name": "bastion-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1388,13 +1388,13 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:21Z",
+            "created_at": "2023-09-28T19:26:11Z",
             "description": "",
             "egress": [
               {
                 "description": "",
                 "from_port": 0,
-                "id": "enpd0p9ng7ebughdsus6",
+                "id": "enp2vr88dhvoir6lid1v",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
@@ -1408,11 +1408,11 @@
               }
             ],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpofv8bdk2d1e1b0n4r",
+            "id": "enp2g9i6bj6eq6uvs8nm",
             "ingress": [],
             "labels": {},
             "name": "egress-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1433,18 +1433,33 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:19Z",
+            "created_at": "2023-09-28T19:26:20Z",
             "description": "",
             "egress": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enphna4fream570qesec",
+            "id": "enprm0e2mgqu9ju55d0j",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enp2ii3e25ak8jm55eve",
+                "id": "enpbdgmchv1buqequ592",
                 "labels": {},
-                "port": 9200,
+                "port": 9300,
+                "predefined_target": "",
+                "protocol": "TCP",
+                "security_group_id": "",
+                "to_port": -1,
+                "v4_cidr_blocks": [
+                  "192.168.11.0/24"
+                ],
+                "v6_cidr_blocks": []
+              },
+              {
+                "description": "",
+                "from_port": -1,
+                "id": "enpe38jehnmsdi5phqb9",
+                "labels": {},
+                "port": 9300,
                 "predefined_target": "",
                 "protocol": "TCP",
                 "security_group_id": "",
@@ -1457,22 +1472,7 @@
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpdmti49ogsqbov1bi5",
-                "labels": {},
-                "port": 9300,
-                "predefined_target": "",
-                "protocol": "TCP",
-                "security_group_id": "",
-                "to_port": -1,
-                "v4_cidr_blocks": [
-                  "192.168.11.0/24"
-                ],
-                "v6_cidr_blocks": []
-              },
-              {
-                "description": "",
-                "from_port": -1,
-                "id": "enpm5jrsi9q2qn0mobpa",
+                "id": "enphlb393d9p4mnus08d",
                 "labels": {},
                 "port": 9200,
                 "predefined_target": "",
@@ -1487,9 +1487,9 @@
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enppa9m0sc7e6vbkucv7",
+                "id": "enpjtfkmgpi9o7f8m3j3",
                 "labels": {},
-                "port": 9300,
+                "port": 9200,
                 "predefined_target": "",
                 "protocol": "TCP",
                 "security_group_id": "",
@@ -1502,7 +1502,7 @@
             ],
             "labels": {},
             "name": "elastic-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1527,16 +1527,16 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:12Z",
+            "created_at": "2023-09-28T19:26:12Z",
             "description": "",
             "egress": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpgius7vidk2in9807g",
+            "id": "enp3rqgt5k55at46kn23",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enp0bn0c8fmghott6m6s",
+                "id": "enpv26entukpv2lq9m2o",
                 "labels": {},
                 "port": 5601,
                 "predefined_target": "",
@@ -1551,7 +1551,7 @@
             ],
             "labels": {},
             "name": "kibana-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1572,35 +1572,35 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:15Z",
+            "created_at": "2023-09-28T19:26:18Z",
             "description": "",
             "egress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpjqigsvog5mm0npur1",
+                "id": "enp59q2mtcv99upa44r4",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
                 "protocol": "TCP",
-                "security_group_id": "enp5stqf6a5mbt5ur8a4",
+                "security_group_id": "enpc0b1eqme5me4h9l7e",
                 "to_port": -1,
                 "v4_cidr_blocks": [],
                 "v6_cidr_blocks": []
               }
             ],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enp4naphdrm83o085ibk",
+            "id": "enpodj7s1idct58hr19s",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpntj66208b0esd5f0t",
+                "id": "enpknnu59otus0qlps5a",
                 "labels": {},
                 "port": 22,
                 "predefined_target": "",
                 "protocol": "TCP",
-                "security_group_id": "enp5stqf6a5mbt5ur8a4",
+                "security_group_id": "enpc0b1eqme5me4h9l7e",
                 "to_port": -1,
                 "v4_cidr_blocks": [],
                 "v6_cidr_blocks": []
@@ -1608,7 +1608,7 @@
             ],
             "labels": {},
             "name": "ssh-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1630,21 +1630,21 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:23Z",
+            "created_at": "2023-09-28T19:26:26Z",
             "description": "",
             "egress": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enp58ducrk25gckh90qr",
+            "id": "enpcmgpmrp7e9vdh9i6a",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpv9sbfdnto4lm70pt7",
+                "id": "enpea63fcuvop5ttqq9n",
                 "labels": {},
                 "port": 80,
                 "predefined_target": "",
                 "protocol": "TCP",
-                "security_group_id": "enpv6lnru0v66ecdhm5m",
+                "security_group_id": "enp56g30kr6t3u2uftl7",
                 "to_port": -1,
                 "v4_cidr_blocks": [],
                 "v6_cidr_blocks": []
@@ -1652,7 +1652,7 @@
             ],
             "labels": {},
             "name": "web-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1674,16 +1674,16 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:18Z",
+            "created_at": "2023-09-28T19:26:22Z",
             "description": "",
             "egress": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enpesjflgvascgtp2gfu",
+            "id": "enpuvp8ootkj0k6tg13f",
             "ingress": [
               {
                 "description": "",
                 "from_port": -1,
-                "id": "enpohp80pf1hur6fooq3",
+                "id": "enpa3sc2e8o58ssr1m15",
                 "labels": {},
                 "port": 80,
                 "predefined_target": "",
@@ -1698,22 +1698,7 @@
               {
                 "description": "",
                 "from_port": 10050,
-                "id": "enpdpm8ddmr9loev117a",
-                "labels": {},
-                "port": -1,
-                "predefined_target": "",
-                "protocol": "TCP",
-                "security_group_id": "",
-                "to_port": 10052,
-                "v4_cidr_blocks": [
-                  "192.168.11.0/24"
-                ],
-                "v6_cidr_blocks": []
-              },
-              {
-                "description": "",
-                "from_port": 10050,
-                "id": "enpqlt7vigd67e3uqhe1",
+                "id": "enp0clkve7ct8dbivnb8",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
@@ -1724,11 +1709,26 @@
                   "192.168.10.0/24"
                 ],
                 "v6_cidr_blocks": []
+              },
+              {
+                "description": "",
+                "from_port": 10050,
+                "id": "enps16stvvlrtuersk1q",
+                "labels": {},
+                "port": -1,
+                "predefined_target": "",
+                "protocol": "TCP",
+                "security_group_id": "",
+                "to_port": 10052,
+                "v4_cidr_blocks": [
+                  "192.168.11.0/24"
+                ],
+                "v6_cidr_blocks": []
               }
             ],
             "labels": {},
             "name": "zabbix-server-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1753,35 +1753,35 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:24Z",
+            "created_at": "2023-09-28T19:26:24Z",
             "description": "",
             "egress": [
               {
                 "description": "",
                 "from_port": 10050,
-                "id": "enpremds8579p5fevoil",
+                "id": "enpa007ngup5v7ov1ctg",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
                 "protocol": "TCP",
-                "security_group_id": "enpesjflgvascgtp2gfu",
+                "security_group_id": "enpuvp8ootkj0k6tg13f",
                 "to_port": 10051,
                 "v4_cidr_blocks": [],
                 "v6_cidr_blocks": []
               }
             ],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "enppukbje9luu6f7ms3j",
+            "id": "enp1l64du3i00ge0kl1t",
             "ingress": [
               {
                 "description": "",
                 "from_port": 10050,
-                "id": "enprf9n46it5196ka5g1",
+                "id": "enp1o7q1pmtf1lv4sh38",
                 "labels": {},
                 "port": -1,
                 "predefined_target": "",
                 "protocol": "TCP",
-                "security_group_id": "enpesjflgvascgtp2gfu",
+                "security_group_id": "enpuvp8ootkj0k6tg13f",
                 "to_port": 10051,
                 "v4_cidr_blocks": [],
                 "v6_cidr_blocks": []
@@ -1789,7 +1789,7 @@
             ],
             "labels": {},
             "name": "zabbix-sg",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "status": "ACTIVE",
             "timeouts": null
           },
@@ -1815,15 +1815,15 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:13Z",
+            "created_at": "2023-09-28T19:26:11Z",
             "description": "",
             "dhcp_options": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "e9bl0la59bcsr28hn8ge",
+            "id": "e9b4665d1jht2h2d8ehd",
             "labels": {},
             "name": "subnet-1",
-            "network_id": "enpu94e7m9go12omtr4p",
-            "route_table_id": "enp3tt6k2oq2pf5j4di2",
+            "network_id": "enp2pn6lgqa1np2hscto",
+            "route_table_id": "enp0hglgakli5s02ielm",
             "timeouts": null,
             "v4_cidr_blocks": [
               "192.168.10.0/24"
@@ -1850,14 +1850,14 @@
         {
           "schema_version": 0,
           "attributes": {
-            "created_at": "2023-09-28T18:05:11Z",
+            "created_at": "2023-09-28T19:26:09Z",
             "description": "",
             "dhcp_options": [],
             "folder_id": "b1g3qp4v82uf78n684iu",
-            "id": "e9bmkb7lstniqqli53m1",
+            "id": "e9bngslkeorl1psam7o6",
             "labels": {},
             "name": "subnet-2",
-            "network_id": "enpu94e7m9go12omtr4p",
+            "network_id": "enp2pn6lgqa1np2hscto",
             "route_table_id": "",
             "timeouts": null,
             "v4_cidr_blocks": [
