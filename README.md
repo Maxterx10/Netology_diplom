@@ -59,10 +59,57 @@
 Вывод `terraform state pull` в файле [`./tf.state.txt`](/tf.state.txt)  
 Вывод лога ansible в файле [`./ansible.log`](/ansible.log)  
 
-Скриншоты:  
+### Скриншоты:  
+
+Terraform output:  
+  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Terraform_output.png)  
+  
+Подключение к IP балансировщика:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Web_index1.png)  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Web_index2.png)  
+
+Хосты, подключенные к Kibana:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Kibana_hosts.png)  
+
+Поиск по стандартным дашбордам Kibana:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Kibana_dashboards_searh.png)  
+
+Дашборды Kibana для Nginx:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Kibana_dashboards_overview.png)  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Kibana_dashboards_access_and_errors.png)  
+
+Список хостов в Zabbix:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_hosts_list.png)  
+
+Пример списка триггеров в Zabbix:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_triggers_example.png)  
+
+Глобальный дашборд Zabbix:  
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_dashboards_global_view.png)  
+
+Примеры индивидуальных дашбордов для хостов в Zabbix:
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_dashboards_list.png)  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_dashboards_example.png)  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Zabbix_dashboards_nginx.png)  
+
+Снэпшоты дисков (скришнот с другой итерации, поэтому id дисков не совпадают с логом):
+
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Snapshots_example.png)  
+
 
 ---
-На схеме ниже неверно указан сбор метрик zabbix-агентами: они стоят на всех хостах, а не только на веб-серверах.  
-![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)
+
+Схема инфраструктуры:  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)  
+*zabbix_agent'ы установлены на всех хостах.
 
 
