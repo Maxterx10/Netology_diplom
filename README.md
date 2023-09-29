@@ -46,7 +46,7 @@
 #### ELK
 
 1. Filebeat на web-серверах, а также elasticsearch и kibana на собственных хостах поднимаются в докер-контейнерах
-2. В конфиге filebeat включены только модуль nginx, собирающий access_log и error_log, модуль system и dashboards
+2. В конфиге filebeat включены только модуль nginx, собирающий access_log и error_log, и dashboards
 3. Стандартные дашборды [Filebeat Nginx] Overview ECS и [Filebeat Nginx] Access and error logs ECS включются через web GUI (можно воспользоваться встроенным поиском)
 
 #### Снэпшоты
