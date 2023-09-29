@@ -65,7 +65,7 @@ Terraform output:
   
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Terraform_output.png)  
   
-Подключение к IP балансировщика:  
+Подключение к веб-серверам через балансировщик:  
 
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Web_index1.png)  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Web_index2.png)  
