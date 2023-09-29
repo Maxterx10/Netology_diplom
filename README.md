@@ -9,7 +9,7 @@
 4. Сгенерировать ssh-key, вставить публичный ключ в `./terraform/meta.txt`
 5. Вставить `cloud_id` и `folder_id` из yandex cloud в `./terraform/main.tf`
 6. Задать в переменной `vm_list` (можно в файле `./terraform/vm_list.tf`) список имен web-серверов. От длины списка зависит их число, но не более 8 в связи с квотами Яндекса на число ВМ в одном облаке
-7. Сгенирировать OAuth-токен в yandex cloud, вставить его в `./terraform/token.tf` или при выполнении п.7 добавить флаг `-var "yc_token=<mytoken>"`
+7. Сгенирировать OAuth-токен в yandex cloud, вставить его в `./terraform/token.tf` или при выполнении п.8 добавить флаг `-var "yc_token=<mytoken>"`
 8. Находясь в директории `./terraform/` запустить `terraform apply`, дождаться завершения развертывания чистой инфраструктуры
 9. Находясь в директории `./ansible/` запустить `ansible-playbook ansible_playbook.yml` для загрузки всех необходимых ролей и коллекций
 10. Находясь в директории `./ansible/` запустить `ansible-playbook master_playbook.yml --vault-password-file <файл содержащий пароль "1111">`
