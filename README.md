@@ -110,6 +110,6 @@ Terraform output:
 
 Схема инфраструктуры:  
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)  
-*zabbix_agent'ы установлены на всех хостах.
+*Zabbix agent'ы установлены на всех хостах.
 
 
