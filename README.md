@@ -1,5 +1,9 @@
 # Netology диплом
-  
+
+### Схема инфраструктуры:  
+![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)  
+*Zabbix agent'ы установлены на всех хостах.
+
 ### Работа выполнялась на Debian 11  
   
 ### Для создания инфраструктуры нужно:
@@ -104,12 +108,4 @@ Terraform output:
 Снэпшоты дисков (скришнот с другой итерации, поэтому id дисков не совпадают с логом):
 
 ![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Diplom_Snapshots_example.png)  
-
-
----
-
-Схема инфраструктуры:  
-![image](https://github.com/Maxterx10/Netology_diplom/blob/main/Infrastructure_scheme.drawio.png?raw=true)  
-*Zabbix agent'ы установлены на всех хостах.
-
 
